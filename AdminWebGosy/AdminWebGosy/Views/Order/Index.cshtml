@@ -1,0 +1,165 @@
+﻿@using WebAPI.Models
+@model IEnumerable<Order>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<main class="app-main mt-4" >
+    <div class ="app-content">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h1 class="h4">Order List</h1>
+                <style>
+                     .non_accept {
+                        border: 1px solid #fd7e14;
+                        border-radius:10px;
+                     }
+
+                    .accept {
+                      border: 1px solid #198754;
+                      border-radius: 10px;
+                    }
+                </style>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-hover table-striped">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Mã đơn</th>
+                        <th scope="col">Người đặt</th>
+                        <th scope="col">Ngày đặt</th>
+                        <th scope="col">Tổng giá</th>
+                        <th scope="col">Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var order in Model)
+                    {
+                        <tr>
+                            <td>@order.Id</td>
+                            <td>@order.Name</td>
+                            <td>@order.CreatedAt</td>
+                            <td>@order.TotalPrice.ToString("C0", new System.Globalization.CultureInfo("vi-VN"))</td>
+                            <td class="d-flex">
+                                <button class="btn btn-sm  m-2"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#orderDetail-@order.Id"
+                                        onclick="loadOrderDetails(@order.Id)">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                              <form asp-action="UpdateOrder" asp-controller="Order" method="post">
+                                <input type="hidden" name="_method" value="PUT" />
+                                    <input type="hidden" name="Id" value="@order.Id" />
+                                    <input type="hidden" name="Name" value="@order.Name" />
+                                    <input type="hidden" name="Phone" value="@order.Phone" />
+                                    <input type="hidden" name="UserId" value="@order.UserId" />
+                                    <input type="hidden" name="Address" value="@order.Address" />
+                                    <input type="hidden" name="TotalPrice" value="@order.TotalPrice" />
+                                    <input type="hidden" name="UpdatedAt" value="@order.UpdatedAt" />
+                                    <input type="hidden" name="CreatedAt" value="@order.CreatedAt" />
+                                    <input type="hidden" name="PaymentMethod" value="@order.PaymentMethod" />
+                                    <input type="hidden" name="PaymentStatus" value="@order.PaymentStatus" />
+                                    <input type="hidden" name="CancellationReason" value="@order.CancellationReason" />
+                                    <input type="hidden" name="Note" value="@order.Note" />
+                                <select name="status" 
+                                        class="m-2 @(order.Status == "Chờ xác nhận" ? "non_accept" : "accept")" 
+                                        onchange="this.form.submit()">
+                                    <option value="Chờ xác nhận" selected="@(order.Status == "Chờ xác nhận")">Chờ xác nhận</option>
+                                    <option value="Đã xác nhận" selected="@(order.Status == "Đã xác nhận")">Đã xác nhận</option>
+                                    <option value="Đã thanh toán" selected="@(order.Status == "Đã thanh toán")">Đã thanh toán</option>
+                                    <option value="Đã giao hàng" selected="@(order.Status == "Đã giao hàng")">Đã giao hàng</option>
+                                </select>
+                              </form>
+
+                                
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        @foreach (var order in Model)
+        {
+            <div class="modal fade mt-2" id="orderDetail-@order.Id" tabindex="-1" aria-labelledby="orderDetailLabel-@order.Id" aria-hidden="true">
+                <div class="modal-dialog  modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                          
+                            <h5 class="modal-title" id="orderDetailLabel-@order.Id">Chi tiết đơn hàng: @order.Id</h5>
+                          
+                            <p class="mt-3 p-1 @(order.Status == "Chờ xác nhận" ? "non_accept" : "accept")"> @order.Status</p>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-lg-7">
+                                    <p><strong>Tên khách hàng:</strong> @order.Name</p>
+                                    <p><strong>Ngày tạo:</strong> @order.CreatedAt</p>
+                                    <p><strong>Phương thức thanh toán:</strong> @order.PaymentMethod</p>
+                                    <p><strong>Lý do hủy:</strong> @(string.IsNullOrEmpty(order.CancellationReason) ? "N/A" : order.CancellationReason)</p>
+                                    <p><strong>Ghi chú:</strong> @(string.IsNullOrEmpty(order.Note) ? "Không có" : order.Note)</p>
+                                    <p><strong>Số điện thoại:</strong> @order.Phone</p>
+                                    <p><strong>Địa chỉ:</strong> @order.Address</p>
+                                </div >
+                                <div class="col-lg-5">
+                                    <h5>Chi tiết sản phẩm:</h5>
+                                    <div id="orderDetailsContent-@order.Id">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <p><strong>Tổng tiền:</strong> @order.TotalPrice.ToString("C0", new System.Globalization.CultureInfo("vi-VN"))</p>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+</main>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+        function loadOrderDetails(orderId) {
+        // Lấy container hiển thị chi tiết đơn hàng
+        const detailsContainer = document.getElementById(`orderDetailsContent-${orderId}`);
+        detailsContainer.innerHTML = '<p>Đang tải.....</p>';
+
+        // Gửi yêu cầu AJAX đến action GetOrderDetails
+        $.get(`/Order/GetOrderDetails?orderId=${orderId}`, function (data) {
+            if (data && data.length > 0) {
+                let contentHtml = '<table class="table w-100 table-hover table-striped" >';
+                    contentHtml += `
+                                    <thead>
+                                        <tr>
+                                            <th>Sản phẩm</th>
+                                            <th>Số lượng</th>
+                                            <th>Giá</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>`;
+
+                data.forEach(item => {
+                    contentHtml += `
+                                    <tr>
+                                        <td>${item.productId}</td>
+                                        <td>${item.quantity}</td>
+                                        <td>${item.price.toLocaleString('vi-VN')} đ</td>
+                                    </tr>`;
+                });
+
+                contentHtml += '</tbody></table>';
+                detailsContainer.innerHTML = contentHtml;
+            } else {
+                detailsContainer.innerHTML = '<p>Không tìm thấy chi tiết đơn hàng.</p>';
+            }
+        }).fail(function () {
+            detailsContainer.innerHTML = '<p>Đã xảy ra lỗi khi tải dữ liệu.</p>';
+        });
+    }
+
+</script>

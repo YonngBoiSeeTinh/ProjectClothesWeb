@@ -1,0 +1,12 @@
+.non_accept {
+    border: 1px solid #fd7e14;
+    border-radius: 10px;
+}
+
+.accept {
+    border: 1px solid #198754;
+    border-radius: 10px;
+}
+.bg-red {
+    background: #dc3545;
+}

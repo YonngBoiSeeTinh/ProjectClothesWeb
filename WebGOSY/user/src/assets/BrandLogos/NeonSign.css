@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+.neon-text {
+    font-size: calc(8px + 6vh);
+    line-height: calc(8px + 8vh);
+    text-shadow: 0 0 5px #4d3eba, 0 0 15px #4d3eba, 0 0 20px #4d3eba, 0 0 40px #4d3eba, 0 0 60px #4d3eba, 0 0 10px #4d3eba, 0 0 98px #4d3eba;
+    color: #ffffff;
+    font-family: "Courier ", cursive;
+    text-align: center;
+    scale: 65%;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 12s infinite;
+    -moz-animation: blink 12s infinite;
+}
+
+.neon-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+
+@keyframes blink {
+    20%, 24%, 55% {
+        color: #111;
+        text-shadow: none;
+    }
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        text-shadow: 0 0 5px #4d3eba, 0 0 15px #4d3eba, 0 0 20px #4d3eba, 
+                    0 0 40px #4d3eba, 0 0 60px #4d3eba, 0 0 10px #4d3eba,
+                    0 0 98px #4d3eba;
+        color: #ffffff;
+    }
+}
+
+@-webkit-keyframes blink {
+    20%, 24%, 55% {
+        color: #111;
+        text-shadow: none;
+    }
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        text-shadow: 0 0 5px #4d3eba, 0 0 15px #4d3eba, 0 0 20px #4d3eba, 
+                    0 0 40px #4d3eba, 0 0 60px #4d3eba, 0 0 10px #4d3eba,
+                    0 0 98px #4d3eba;
+        color: #ffffff;
+    }
+}
+
+@-moz-keyframes blink {
+    20%, 24%, 55% {
+        color: #111;
+        text-shadow: none;
+    }
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        text-shadow: 0 0 5px #4d3eba, 0 0 15px #4d3eba, 0 0 20px #4d3eba, 
+                    0 0 40px #4d3eba, 0 0 60px #4d3eba, 0 0 10px #4d3eba,
+                    0 0 98px #4d3eba;
+        color: #ffffff;
+    }
+}
+
+
+
+
+
+
+
+
+/* @import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+.neon-text {
+    font-size: calc(8px + 6vh);
+    line-height: calc(8px + 8vh);
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #4d3eba, 0 0 10px #ff8d00, 0 0 98px #4d3eba;
+    color: #fff6a9;
+    font-family: "Sacramento", cursive;
+    text-align: center;
+    scale: 65%;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 12s infinite;
+    -moz-animation: blink 12s infinite;
+}
+
+.neon-sign {
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+
+
+@keyframes blink {
+    20%,
+    24%,
+    55% {
+        color: #111;
+        text-shadow: none;
+    }
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+            0 0 40px #ffa500, 0 0 60px #4d3eba, 0 0 10px #ff8d00,
+            0 0 98px #4d3eba;
+        color: #fff6a9;
+    }
+}
+
+@-webkit-keyframes blink {
+    20%,
+    24%,
+    55% {
+        color: #111;
+        text-shadow: none;
+    }
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+            0 0 40px #ffa500, 0 0 60px #4d3eba, 0 0 10px #ff8d00,
+            0 0 98px #4d3eba;
+        color: #fff6a9;
+    }
+}
+
+@-moz-keyframes blink {
+    20%,
+    24%,
+    55% {
+        color: #111;
+        text-shadow: none;
+    }
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+            0 0 40px #ffa500, 0 0 60px #4d3eba, 0 0 10px #ff8d00,
+            0 0 98px #4d3eba;
+        color: #fff6a9;
+    }
+} */

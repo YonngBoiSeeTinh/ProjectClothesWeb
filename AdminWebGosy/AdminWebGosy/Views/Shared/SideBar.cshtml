@@ -1,0 +1,113 @@
+﻿
+<aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark">
+    <!--begin::Sidebar Brand-->
+    <div class="sidebar-brand">
+        <a class="brand-link" asp-area="Home" asp-page="/Index">
+            <img src="/assets/img/AdminLTELogo.png"
+                 alt="AdminLTE Logo"
+                 class="brand-image opacity-75 shadow" />
+
+            <span class="brand-text fw-light">AdminLTE 4</span>
+        </a>
+    </div>
+
+    <div class="sidebar-wrapper">
+        <nav class="mt-2">
+            <!--begin::Sidebar Menu-->
+            <ul class="nav sidebar-menu flex-column"
+                data-lte-toggle="treeview"
+                role="menu"
+                data-accordion="false">
+                <li class="nav-header">Main</li>
+                <li class="nav-item">
+                    <a asp-controller="Home" asp-action="Index" class="nav-link">
+                        <i class="nav-icon bi bi-speedometer"></i>
+                        <p>Dashboard</p>
+                    </a>
+                  
+                </li>
+                <li class="nav-item">
+                    <a asp-controller="Product" asp-action="ProductList" class="nav-link">
+                        <i class="nav-icon bi bi-box-seam-fill"></i>
+                        <p> Products  </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon bi bi-box-seam-fill"></i>
+                        <p> Categories  </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon bi bi-box-seam-fill"></i>
+                        <p> Stored  </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a asp-controller="Order" asp-action="Index" class="nav-link">
+                        <i class="nav-icon bi bi-clipboard-fill"></i>
+                        <p>
+                            Orders
+                            <div class="nav-badge badge text-bg-secondary bg-red me-3">@TempData.Peek("countOrder")</div>
+                        </p>
+                    </a>
+                    <ul class="nav" style="margin-left: 8px; font-size: 0.9em;">
+                        <li class="nav-item">
+                            <a asp-controller="Order" asp-action="Index" asp-route-status="Chờ xác nhận" class="nav-link">
+                                <i class="nav-icon bi bi-circle"></i>
+                                <p>Chờ xác nhận</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-controller="Order" asp-action="Index" asp-route-status="Đã xác nhận" class="nav-link">
+                                <i class="nav-icon bi bi-circle"></i>
+                                <p>Đã xác nhận</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-controller="Order" asp-action="Index" asp-route-status="Đã thanh toán" class="nav-link">
+                                <i class="nav-icon bi bi-circle"></i>
+                                <p>Đã thanh toán </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-controller="Order" asp-action="Index" asp-route-status="Đã giao hàng" class="nav-link">
+                                <i class="nav-icon bi bi-circle"></i>
+                                <p>Đã giao hàng</p>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </li>
+               
+                <li class="nav-header">Account</li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon bi bi-box-arrow-in-right"></i>
+                        <p>
+                            Admin
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon bi bi-box-arrow-in-right"></i>
+                        <p>
+                            Customers
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./docs/introduction.html" class="nav-link">
+                        <i class="nav-icon bi bi-box-arrow-in-right"></i>
+                        <p>Log out</p>
+                    </a>
+                </li>
+               
+            </ul>
+            <!--end::Sidebar Menu-->
+        </nav>
+    </div>
+    <!--end::Sidebar Wrapper-->
+</aside>

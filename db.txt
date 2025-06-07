@@ -1,0 +1,130 @@
+CREATE TABLE Account (
+    id INT PRIMARY KEY,
+    created_at DATETIME DEFAULT GETDATE(),
+    email NVARCHAR(255) UNIQUE,
+    password NVARCHAR(255),
+    updated_at DATETIME DEFAULT GETDATE(),
+    user_id INT
+);
+
+CREATE TABLE Cart (
+    id INT PRIMARY KEY,
+    created_at DATETIME DEFAULT GETDATE(),
+    price DECIMAL(18, 2),
+    color_size_id INT,
+    product_id INT,
+    quantity INT,
+    updated_at DATETIME DEFAULT GETDATE(),
+    user_id INT
+);
+
+CREATE TABLE Category (
+    id INT PRIMARY KEY,
+    created_at DATETIME DEFAULT GETDATE(),
+    description NVARCHAR(MAX),
+    image NVARCHAR(MAX),
+    name NVARCHAR(255),
+    updated_at DATETIME DEFAULT GETDATE()
+);
+
+CREATE TABLE ColorSize (
+    id INT PRIMARY KEY,
+    color NVARCHAR(50),
+    code NVARCHAR(50),
+    price DECIMAL(18, 2),
+    created_at DATETIME DEFAULT GETDATE(),
+    product_id INT,
+    quantity INT,
+    size NVARCHAR(10),
+    updated_at DATETIME DEFAULT GETDATE()
+);
+
+
+
+CREATE TABLE Order (
+    id INT PRIMARY KEY,
+    address NVARCHAR(255),
+    note NVARCHAR(MAX),
+    name NVARCHAR(255),
+    payment_method NVARCHAR(70),
+    payment_status NVARCHAR(70),
+    cancellation_reason NVARCHAR(255),
+    created_at DATETIME DEFAULT GETDATE(),
+    phone NVARCHAR(15),
+    status NVARCHAR(50) DEFAULT 'Chưa xác nhận',
+    total_price DECIMAL(18, 2),
+    updated_at DATETIME DEFAULT GETDATE(),
+    user_id INT
+);
+
+CREATE TABLE OrderDetail (
+    id INT PRIMARY KEY,
+    color_size_id INT,
+    created_at DATETIME DEFAULT GETDATE(),
+    order_id INT,
+    price DECIMAL(18, 2),
+    product_id INT,
+    quantity INT,
+    updated_at DATETIME DEFAULT GETDATE()
+);
+
+CREATE TABLE Product (
+    id INT PRIMARY KEY,
+    category_id INT,
+    created_at DATETIME DEFAULT GETDATE(),
+    description NVARCHAR(MAX),
+    image NVARCHAR(MAX),
+    name NVARCHAR(255),
+    brand NVARCHAR(50),
+    price DECIMAL(18, 2),
+    promo NVARCHAR(255),
+    rate INT DEFAULT 0,
+    stars_rate INT,
+    sold INT DEFAULT 0,
+    unit NVARCHAR(50),
+    updated_at DATETIME DEFAULT GETDATE()
+);
+
+CREATE TABLE Comment (
+    id INT PRIMARY KEY,
+    product_id INT,
+    user_id INT,
+    name NVARCHAR(255),
+    stars FLOAT,
+    content NVARCHAR(250),
+    created_at DATETIME DEFAULT GETDATE(),
+    updated_at DATETIME DEFAULT GETDATE()
+);
+
+CREATE TABLE Promotion (
+    id INT PRIMARY KEY,
+    created_at DATETIME DEFAULT GETDATE(),
+    end_at DATETIME,
+    name NVARCHAR(255),
+    code NVARCHAR(20),
+    updated_at DATETIME DEFAULT GETDATE(),
+    value DECIMAL(18, 2),
+    min_price DECIMAL(18, 2),
+    max_value DECIMAL(18, 2)
+);
+
+CREATE TABLE Role (
+    id INT PRIMARY KEY,
+    created_at DATETIME DEFAULT GETDATE(),
+    name NVARCHAR(255),
+    promo NVARCHAR(MAX),
+    updated_at DATETIME DEFAULT GETDATE()
+);
+
+CREATE TABLE [User] (
+    id INT PRIMARY KEY,
+    account INT,
+    address NVARCHAR(255),
+    created_at DATETIME DEFAULT GETDATE(),
+    image NVARCHAR(MAX),
+    name NVARCHAR(255),
+    phone NVARCHAR(15),
+    role INT,
+    total_buy DECIMAL(18, 2) DEFAULT 0,
+    updated_at DATETIME DEFAULT GETDATE(),
+   );

@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+}
+
+@layer utilities {
+  
+    @keyframes slideIn {
+        from {
+            transform: translateY(-100%);
+            -webkit-transform: translateY(-100%);
+            -moz-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+            -o-transform: translateY(-100%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideOut {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(-100%);
+        }
+    }
+
+    .animate-slide-in {
+        animation: slideIn 0.3s ease-out forwards;
+    }
+
+    .animate-slide-out {
+        animation: slideOut 0.3s ease-in forwards;
+    }
+}
+
+.header-menu-item {
+    position: relative;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+}
+.header-menu-item:hover:after {
+    width: 80%;
+    left: 12%;
+}
+.header-menu-item:after {
+    content: "";
+    pointer-events: none;
+    bottom: -0.8em;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #4069b5;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+.productcard-img {
+   
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+    box-shadow: 0 0 0px 1000px white inset !important;
+    background-color: white !important;
+}
+.card_item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+  .card_item:hover {
+    box-shadow: 0px 10px 25px rgba(229, 56, 186, 0.2);
+    border:1px solid rgb(174, 152, 213);
+    transform: translateY(-4px);
+  }
+.category_item{
+    transition: transform 0.3s ease, box-shadow,background-color,color 0.3s ease;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    color: rgb(122, 122, 122);
+}
+.category_item:hover{
+    box-shadow: 0px 0px 15px rgba(185, 5, 225, 0.2);
+    transform: translateY(-4px) ;
+    border:1px solid rgb(174, 152, 213);
+    color:  rgb(174, 152, 213);
+    
+}
