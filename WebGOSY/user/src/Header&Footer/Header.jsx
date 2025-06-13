@@ -78,9 +78,11 @@ const Header = ({cartOpen, setCartOpen}) => {
                 {/* Logo */}
                 <Link
                     to={`${PathNames.HOMEPAGE}`}
-                    className="xl:-translate-x-3"
+                   
+                    className="text-indigo-300 font-bold tracking-widest text-1xl uppercase sm:text-3xl"
                 >
-                    <NeonSign text="PHONY BALONEY" />
+                    {/* <NeonSign text="PHONY BALONEY" /> */}
+                     GOSY STORE
                 </Link>
 
                 {isMobile && (

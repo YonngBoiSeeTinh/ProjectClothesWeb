@@ -7,7 +7,7 @@
                  alt="AdminLTE Logo"
                  class="brand-image opacity-75 shadow" />
 
-            <span class="brand-text fw-light">AdminLTE 4</span>
+            <span class="brand-text fw-light">GOSY STORE</span>
         </a>
     </div>
 
@@ -18,37 +18,32 @@
                 data-lte-toggle="treeview"
                 role="menu"
                 data-accordion="false">
-                <li class="nav-header">Main</li>
+                <li class="nav-header">Quản lý</li>
                 <li class="nav-item">
                     <a asp-controller="Home" asp-action="Index" class="nav-link">
                         <i class="nav-icon bi bi-speedometer"></i>
-                        <p>Dashboard</p>
+                        <p>Doanh thu</p>
                     </a>
                   
                 </li>
                 <li class="nav-item">
                     <a asp-controller="Product" asp-action="ProductList" class="nav-link">
                         <i class="nav-icon bi bi-box-seam-fill"></i>
-                        <p> Products  </p>
+                        <p> Sản phẩm  </p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a asp-controller="Category" asp-action="Index" class="nav-link">
                         <i class="nav-icon bi bi-box-seam-fill"></i>
-                        <p> Categories  </p>
+                        <p> Danh mục  </p>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon bi bi-box-seam-fill"></i>
-                        <p> Stored  </p>
-                    </a>
-                </li>
+                
                 <li class="nav-item">
                     <a asp-controller="Order" asp-action="Index" class="nav-link">
                         <i class="nav-icon bi bi-clipboard-fill"></i>
                         <p>
-                            Orders
+                            Đơn hàng
                             <div class="nav-badge badge text-bg-secondary bg-red me-3">@TempData.Peek("countOrder")</div>
                         </p>
                     </a>
@@ -80,8 +75,13 @@
                         
                     </ul>
                 </li>
-               
-                <li class="nav-header">Account</li>
+                <li class="nav-item">
+                    <a asp-controller="Promotion" asp-action="Index" class="nav-link">
+                        <i class="nav-icon bi bi-box-seam-fill"></i>
+                        <p> Khuyến mãi  </p>
+                    </a>
+                </li>
+                <li class="nav-header">Tài khoản</li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon bi bi-box-arrow-in-right"></i>
@@ -91,10 +91,10 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a asp-controller="User" asp-action="Index" class="nav-link">
                         <i class="nav-icon bi bi-box-arrow-in-right"></i>
                         <p>
-                            Customers
+                            Khách hàng
                         </p>
                     </a>
                 </li>

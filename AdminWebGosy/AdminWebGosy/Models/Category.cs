@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace WebAPI.Models;
 
-public partial class Category : BaseEntity, IHasImage
+public partial class Category : BaseEntity
 {
    
 
@@ -11,7 +11,7 @@ public partial class Category : BaseEntity, IHasImage
 
     public string? Description { get; set; }
 
-    public byte[]? Image { get; set; }
+    public String Image { get; set; }
 
     
 }

@@ -18,7 +18,7 @@ const ProductDetails = () => {
     const [error, setError] = useState("");
     const user = useSelector((state) => state.user);
     const userId = user?.id;
-    
+    const [loading, setLoading] = useState(false);
     const [colorSizes, setColorSizes] = useState(null);
     const [availableColors, setAvailableColors] = useState([]);
     const [availableSizes, setAvailableSizes] = useState([]);
@@ -395,9 +395,7 @@ const ProductDetails = () => {
                         <h2 className="text-3xl font-bold mb-2">
                             {product.name}
                         </h2>
-                        <p className="text-gray-600 mb-4 text-xs">
-                            SKU: {product.productId}
-                        </p>
+                       
                         <div className="mb-4">
                             <span className="text-2xl font-bold mr-2 text-primary">
                                 {product.price.toLocaleString()} đ

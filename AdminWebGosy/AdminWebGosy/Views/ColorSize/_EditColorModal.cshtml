@@ -1,0 +1,54 @@
+﻿@using WebAPI.Models
+@model ColorSize
+
+<div class="modal fade" id="editColorSizeModal-@Model.Id" tabindex="-1" aria-labelledby="editColorModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <form asp-action="UpdateColor" asp-controller="ColorSize" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="_method" value="PUT" />
+                <div class="modal-header">
+                    <h5 class="modal-title">Sửa sản phẩm</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="Id" value="@Model.Id" />
+                    <input type="hidden" name="ProductId" value="@Model.ProductId" />
+                    <input type="hidden" name="CreatedAt" value="@Model.CreatedAt" />
+                    <input type="hidden" name="Price" value="@Model.Price" />
+                    <div class="mb-3">
+                        <label for="editProductColor-@Model.Id" class="form-label">Tên màu</label>
+                        <input id="editColor-@Model.Id" type="text" class="form-control" name="Color" value="@Model.Color" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="editProductColor-@Model.Id" class="form-label">Kích cỡ</label>
+                        <input id="editSize-@Model.Id" type="text" class="form-control" name="Size" value="@Model.Size" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <input id="editCode-@Model.Id" type="color" class="form-control" name="Code" value="@Model.Code" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="editProductColor-@Model.Id" class="form-label">Số lượng</label>
+                        <input id="editQuantity-@Model.Id" type="number" class="form-control" name="Quantity" value="@Model.Quantity" required>
+                    </div>
+
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+   <script>
+    document.querySelector(`#editColorSizeModal-@Model.Id form`).addEventListener('submit', function (event) {
+     
+        event.stopPropagation(); // Ngăn sự kiện lan đến các phần tử cha
+    });
+
+   </script>

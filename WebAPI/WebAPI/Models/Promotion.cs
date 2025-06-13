@@ -13,6 +13,6 @@ public partial class Promotion : BaseEntity
     public decimal MinPrice { get; set; }
     public decimal MaxValue { get; set; }
     public string Code { get; set; } = null!;
-
+    public DateTime? StartAt { get; set; }
     public DateTime? EndAt { get; set; }
 }

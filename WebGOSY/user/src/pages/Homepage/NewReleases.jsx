@@ -14,6 +14,7 @@ const NewReleases = () => {
     const [error, setError] = useState("");
     const navigate = useNavigate();
     const [cartItems, setCartItems] = useState([]);
+      const [loading, setLoading] = useState(false);
     useEffect(() => {
         const fetchProducts = async () => {
             try {

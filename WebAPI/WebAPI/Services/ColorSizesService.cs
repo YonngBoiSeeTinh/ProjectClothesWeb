@@ -36,6 +36,20 @@ namespace WebAPI.Services
             // Kiểm tra nếu không có kết quả, trả về danh sách rỗng
             return colorSizes ?? new List<ColorSize>();
         }
+        public async Task UpdateStock(int colorSizeId, int quantity)
+        {
+            var colorSize = await _context.ColorSizes.FindAsync(colorSizeId);
+
+            if (colorSize == null)
+            {
+                throw new Exception($"ColorSize với Id {colorSizeId} không tồn tại.");
+            }
+
+            // Cập nhật số lượng
+            colorSize.Quantity = colorSize.Quantity- quantity;
+            _context.ColorSizes.Update(colorSize);
+            await _context.SaveChangesAsync();
+        }
 
     }
 }

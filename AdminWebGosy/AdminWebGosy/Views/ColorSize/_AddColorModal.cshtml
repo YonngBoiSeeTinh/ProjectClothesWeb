@@ -1,0 +1,47 @@
+﻿
+
+<div class="modal fade" id="addColorModal" tabindex="-1" aria-labelledby="editColorModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form asp-action="AddColor" asp-controller="ColorSize" method="post" enctype="multipart/form-data">
+                <div class="modal-header">
+                    <h5 class="modal-title">Thêm màu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="ProductId" value="@Model" />
+                    <input type="hidden" name="Price" value="0" />
+                    <div class="mb-3">
+                        <label for="editColor-@Model" class="form-label">Tên màu</label>
+                        <input id="editColor-@Model" type="text" class="form-control" name="Color" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="editColor-@Model" class="form-label">Kích cỡ</label>
+                        <input id="editSize-@Model" type="text" class="form-control" name="Size" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <input id="editCode-@Model" type="color" class="form-control" name="Code"  required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="editColor-@Model" class="form-label">Số lượng</label>
+                        <input id="editQuantity-@Model" type="number" class="form-control" name="Quantity"  required>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="submit" class="btn btn-primary">Thêm mới</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    document.querySelector(`#editColorSizeModal-@Model form`).addEventListener('submit', function (event) {
+
+        event.stopPropagation(); // Ngăn sự kiện lan đến các phần tử cha
+    });
+
+</script>

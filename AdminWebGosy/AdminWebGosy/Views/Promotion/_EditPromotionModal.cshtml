@@ -1,0 +1,63 @@
+﻿@using WebAPI.Models
+@model Promotion
+
+<div class="modal fade " id="editPromotionModal" tabindex="-1" aria-labelledby="editPromotionLabel-@Model.Id" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Sửa mã giảm giá</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form asp-action="UpdatePromotion" asp-controller="Promotion" method="post">
+                <div class="modal-body">
+                    <input type="hidden" name="_method" value="PUT" />
+                    <input type="hidden" name="Id" value="@Model.Id" />
+                    <div class="mb-3">
+                        <label for="editPromotionName" class="form-label">Mã giảm giá</label>
+                        <input type="text" class="form-control"  name="Code" value="@Model.Code" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="editPromotionName" class="form-label">Tên mã giảm giá</label>
+                        <input type="text" class="form-control" name="Name" value="@Model.Name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="editPromotionValue" class="form-label">Giá trị giảm</label>
+                        <input type="number" class="form-control" name="Value" value="@Model.Value" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="editPromotionStartAt" class="form-label">Ngày bắt đầu</label>
+                        <input type="datetime" class="form-control" i name="StartAt"
+                               value="@Model.StartAt?.ToString("yyyy-MM-dd") "required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="editPromotionEndAt" class="form-label">Ngày kết thúc</label>
+                        <input type="datetime" class="form-control" name="EndAt"
+                               value="@Model.StartAt?.ToString("yyyy-MM-dd")" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="editPromotionMinValue" class="form-label">Mức mua tối thiểu</label>
+                        <input type="number" class="form-control"  name="MinPrice" value="@Model.MinPrice" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="editPromotionMaxValue" class="form-label">Giảm tối đa</label>
+                        <input type="number" class="form-control" name="MaxValue" value="@Model.MaxValue" required>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

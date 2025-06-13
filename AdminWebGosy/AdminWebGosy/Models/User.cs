@@ -19,6 +19,16 @@ namespace WebAPI.Models;
     public decimal? TotalBuy { get; set; }
 
     public int? Account { get; set; }
+    public string? RoleName => Role switch
+    {
+        1 => "Khách vãng lai",
+        2 => "Admin",
+        3 => "Nhân viên",
+        4 => "Khách hàng thường",
+        5 => "Khách hàng Bạc",
+        6 => "Khách hàng Vàng",
+        7 => "Khách hàng Kim Cương",
+        _ => null
+    };
 
-   
 }

@@ -209,35 +209,23 @@ const Checkout = () => {
             return {}
         }
     };
-    const updateStock = async (colorSizeId, quantity) => {
-        const updateColorSize = { ...await fetchColorSize(colorSizeId) };
-        updateColorSize.quantity -= quantity;
-       
-        delete updateColorSize.updatedAt;
-        console.log("Updated ColorSize:", updateColorSize);
-        if(updateColorSize){
+    const updateStock = async (productId,colorSizeId, quantity) => {
+      
             try {
                 const response = await fetch(
-                    `${API_URL}/api/ColorSizes/${colorSizeId}`,
+                    `${API_URL}/api/ColorSizes/updateStock/${colorSizeId}?quantity=${quantity}`,
                     {
                         method: "PUT",
                         headers: {
-                            "Content-Type": "application/json", 
+                            "Content-Type": "application/json", // Không bắt buộc nếu bạn không gửi body
                         },
-                        body: JSON.stringify(updateColorSize),
                     }
                 );
                 console.log("update color response", response);
              
                 if (response.ok) {
-                    notification.success({
-                        message: 'Thành công',
-                        description: "Số lượng đã được cập nhật thành công",
-                        duration: 4,
-                        placement: "bottomRight",
-                        showProgress: true,
-                        pauseOnHover: true
-                    });
+                     await updateSold(productId, quantity)
+                  
                 }
             } catch (error) {
                 console.error("Lỗi khi cập nhật Số lượng:", error);
@@ -250,7 +238,7 @@ const Checkout = () => {
                     pauseOnHover: true
                 });
             }
-        }
+        
     };
     const updateSold = async (productId, quantity) => {
         const product = productItems[productId];
@@ -261,8 +249,6 @@ const Checkout = () => {
             formData.append(key, product[key]);
         });
         formData.append("createdAt", product.createdAt);
-    
-        console.log("📝 FormData nội dung:");
         for (let [key, value] of formData.entries()) {
             console.log(key, value);
         }
@@ -391,8 +377,8 @@ const Checkout = () => {
                             throw new Error("Lỗi khi tạo chi tiết đơn hàng");
                         }
                         // Gọi API cập nhật số lượng colorSize
-                        await updateSold(item.productId, item.quantity)
-                        await updateStock(item.colorSizeId, item.quantity)
+                       
+                        await updateStock(item.productId,item.colorSizeId, item.quantity)
                     
                     }
                     // Xóa sản phẩm khỏi giỏ hàng
@@ -707,7 +693,7 @@ const Checkout = () => {
                                                     <p className="text-sm text-gray-600">
                                                         Giảm{" "}
                                                         {
-                                                            discount.discountPercent
+                                                            discount.value
                                                         }
                                                         % (Tối đa{" "}
                                                         {discount.maxValue.toLocaleString()}

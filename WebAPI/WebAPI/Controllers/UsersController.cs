@@ -99,7 +99,21 @@ namespace WebAPI.Controllers
                 return BadRequest(new { message = ex.Message });
             }
         }
+        // PUT: api/updateRole/5
+        [HttpPut("updateRole/{id}")]
+        public async Task<IActionResult> UpdateRole(int id, decimal totalBuy)
+        {
 
+            try
+            {
+                await _UserService.UpdateRole(id, totalBuy);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = ex.Message });
+            }
+        }
         // POST: api/Users
         [HttpPost]
         public async Task<ActionResult<User>> PostUser([FromForm] UserDTO userDTO, IFormFile? image)

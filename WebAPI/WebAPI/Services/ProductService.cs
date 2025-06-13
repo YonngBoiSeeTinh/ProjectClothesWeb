@@ -15,6 +15,7 @@ namespace WebAPI.Services
             _context = context;
             _colorSizesService = colorSizesService;
         }
+
         public async Task DeleteDependencieAsync(int productId)
         {
             var product = await _context.Products.FindAsync(productId);
@@ -41,6 +42,20 @@ namespace WebAPI.Services
 
             }
             _context.Products.Remove(product);
+            await _context.SaveChangesAsync();
+        }
+        public async Task UpdateSold(int productId, int quantity)
+        {
+            var product = await _context.Products.FindAsync(productId);
+
+            if (product == null)
+            {
+                throw new Exception($"Product với Id {productId} không tồn tại.");
+            }
+
+            // Cập nhật số lượng
+            product.Sold = product.Sold + quantity;
+            _context.Products.Update(product);
             await _context.SaveChangesAsync();
         }
 

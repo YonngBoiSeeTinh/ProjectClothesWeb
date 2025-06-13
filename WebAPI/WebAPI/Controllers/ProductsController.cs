@@ -83,7 +83,21 @@ namespace WebAPI.Controllers
                 return StatusCode(500, new { message = ex.Message });
             }
         }
+        // PUT: api/ColorSizes/5
+        [HttpPut("updateSold/{id}")]
+        public async Task<IActionResult> UpdateSold(int id, int quantity)
+        {
 
+            try
+            {
+                await _ProductService.UpdateSold(id, quantity);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = ex.Message });
+            }
+        }
         // POST: api/Product
         [HttpPost]
         public async Task<ActionResult<Product>> PostProduct([FromForm] ProductDTO productDto, IFormFile? image)

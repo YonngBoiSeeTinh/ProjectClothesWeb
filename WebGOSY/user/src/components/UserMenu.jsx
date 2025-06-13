@@ -50,15 +50,15 @@ const UserMenu = () => {
 
     const UserItems = [
         {
-            label: <Link to={PathNames.PROFILE}>Profile</Link>,
+            label: <Link to={PathNames.PROFILE}>Tài khoản</Link>,
             key: "0",
         },
         {
-            label: <Link to={PathNames.MY_ORDERS}>My Orders</Link>,
+            label: <Link to={PathNames.MY_ORDERS}>Đơn hàng</Link>,
             key: "1",
         },
         {
-            label: <p onClick={handleLogout}>Log Out</p>,
+            label: <p onClick={handleLogout}>Đăng xuất</p>,
             key: "2",
         },
     ];

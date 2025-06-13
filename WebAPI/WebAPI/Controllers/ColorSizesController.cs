@@ -55,10 +55,25 @@ namespace WebAPI.Controllers
         }
 
         // PUT: api/ColorSizes/5
+        [HttpPut("updateStock/{id}")]
+        public async Task<IActionResult> UpdateStock(int id, int quantity)
+        {
+
+            try
+            {
+                await _colorSizesService.UpdateStock(id, quantity);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = ex.Message });
+            }
+        }
+        // PUT: api/ColorSizes/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutColorSize(int id, ColorSize colorSize)
         {
-           
+
 
             try
             {

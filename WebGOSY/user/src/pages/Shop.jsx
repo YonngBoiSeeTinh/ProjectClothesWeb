@@ -19,7 +19,7 @@ const Shop = () => {
     const [tempSelectedCategories, setTempSelectedBCategories] = useState([
         location.state?.category || "",
     ]);
-    console.log('tempSelectedCategories',tempSelectedCategories);
+   
     const [tempSelectedColors, setTempSelectedColors] = useState([]);
     const [tempPriceRange, setTempPriceRange] = useState([0, 20000000]);
 

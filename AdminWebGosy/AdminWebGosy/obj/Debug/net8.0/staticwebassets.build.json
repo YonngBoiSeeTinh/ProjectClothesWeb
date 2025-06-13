@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "E9Ihn21XmP7vWN0zLfs815l2OxIiegDXTFlsyv8+nJo=",
+  "Hash": "FEbojZGGPNoZ5xnvWduwtUiLzAjN/y/RymhxBJpePF0=",
   "Source": "AdminWebGosy",
   "BasePath": "_content/AdminWebGosy",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "AdminWebGosy\\wwwroot",
       "Source": "AdminWebGosy",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AdminWebGosy.styles.css",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AdminWebGosy.styles.css",
       "SourceId": "AdminWebGosy",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "AdminWebGosy#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -35,13 +35,13 @@
       "Integrity": "sm9J0fIlgM6BLmMBwjyH70aAcmmUxuaPHSoarKQLxJ0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\AdminWebGosy\\AdminWebGosy\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AdminWebGosy.styles.css"
+      "OriginalItemSpec": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AdminWebGosy.styles.css"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AdminWebGosy.bundle.scp.css",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AdminWebGosy.bundle.scp.css",
       "SourceId": "AdminWebGosy",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "AdminWebGosy#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -56,13 +56,13 @@
       "Integrity": "sm9J0fIlgM6BLmMBwjyH70aAcmmUxuaPHSoarKQLxJ0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\AdminWebGosy\\AdminWebGosy\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AdminWebGosy.bundle.scp.css"
+      "OriginalItemSpec": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AdminWebGosy.bundle.scp.css"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\AdminLTEFullLogo.png",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\AdminLTEFullLogo.png",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/AdminLTEFullLogo#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\AdminLTEFullLogo.png"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\AdminLTELogo.png",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\AdminLTELogo.png",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/AdminLTELogo#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -101,10 +101,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\AdminLTELogo.png"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\avatar.png",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\avatar.png",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/avatar#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\avatar.png"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\avatar2.png",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\avatar2.png",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/avatar2#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\avatar2.png"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\avatar3.png",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\avatar3.png",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/avatar3#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -164,10 +164,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\avatar3.png"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\avatar4.png",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\avatar4.png",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/avatar4#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -185,10 +185,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\avatar4.png"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\avatar5.png",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\avatar5.png",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/avatar5#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -206,10 +206,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\avatar5.png"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\boxed-bg.jpg",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\boxed-bg.jpg",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/boxed-bg#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -227,10 +227,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\boxed-bg.jpg"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\boxed-bg.png",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\boxed-bg.png",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/boxed-bg#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -248,10 +248,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\boxed-bg.png"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\american-express.png",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\american-express.png",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/credit/american-express#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -269,10 +269,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\credit\\american-express.png"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\cirrus.png",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\cirrus.png",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/credit/cirrus#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -290,10 +290,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\credit\\cirrus.png"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\mastercard.png",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\mastercard.png",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/credit/mastercard#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -311,10 +311,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\credit\\mastercard.png"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\paypal.png",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\paypal.png",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/credit/paypal#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -332,10 +332,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\credit\\paypal.png"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\paypal2.png",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\paypal2.png",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/credit/paypal2#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -353,10 +353,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\credit\\paypal2.png"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\visa.png",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\visa.png",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/credit/visa#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\credit\\visa.png"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\default-150x150.png",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\default-150x150.png",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/default-150x150#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -395,10 +395,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\default-150x150.png"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\icons.png",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\icons.png",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/icons#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons.png"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\photo1.png",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\photo1.png",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/photo1#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -437,10 +437,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\photo1.png"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\photo2.png",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\photo2.png",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/photo2#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -458,10 +458,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\photo2.png"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\photo3.jpg",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\photo3.jpg",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/photo3#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -479,10 +479,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\photo3.jpg"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\photo4.jpg",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\photo4.jpg",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/photo4#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -500,10 +500,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\photo4.jpg"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\prod-1.jpg",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\prod-1.jpg",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/prod-1#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -521,10 +521,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\prod-1.jpg"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\prod-2.jpg",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\prod-2.jpg",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/prod-2#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -542,10 +542,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\prod-2.jpg"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\prod-3.jpg",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\prod-3.jpg",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/prod-3#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -563,10 +563,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\prod-3.jpg"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\prod-4.jpg",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\prod-4.jpg",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/prod-4#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -584,10 +584,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\prod-4.jpg"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\prod-5.jpg",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\prod-5.jpg",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/prod-5#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -605,10 +605,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\prod-5.jpg"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user1-128x128.jpg",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user1-128x128.jpg",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/user1-128x128#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -626,10 +626,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\user1-128x128.jpg"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user2-160x160.jpg",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user2-160x160.jpg",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/user2-160x160#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -647,10 +647,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\user2-160x160.jpg"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user3-128x128.jpg",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user3-128x128.jpg",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/user3-128x128#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -668,10 +668,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\user3-128x128.jpg"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user4-128x128.jpg",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user4-128x128.jpg",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/user4-128x128#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -689,10 +689,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\user4-128x128.jpg"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user5-128x128.jpg",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user5-128x128.jpg",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/user5-128x128#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -710,10 +710,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\user5-128x128.jpg"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user6-128x128.jpg",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user6-128x128.jpg",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/user6-128x128#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\user6-128x128.jpg"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user7-128x128.jpg",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user7-128x128.jpg",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/user7-128x128#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -752,10 +752,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\user7-128x128.jpg"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user8-128x128.jpg",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user8-128x128.jpg",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "assets/img/user8-128x128#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -773,10 +773,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\user8-128x128.jpg"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.css",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.css",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "css/adminlte#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -794,10 +794,10 @@
       "OriginalItemSpec": "wwwroot\\css\\adminlte.css"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.css.map",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.css.map",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "css/adminlte.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\css\\adminlte.css.map"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.min.css",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.min.css",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "css/adminlte.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -836,10 +836,10 @@
       "OriginalItemSpec": "wwwroot\\css\\adminlte.min.css"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.min.css.map",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.min.css.map",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "css/adminlte.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -857,10 +857,10 @@
       "OriginalItemSpec": "wwwroot\\css\\adminlte.min.css.map"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.rtl.css",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.rtl.css",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "css/adminlte.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -878,10 +878,10 @@
       "OriginalItemSpec": "wwwroot\\css\\adminlte.rtl.css"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.rtl.css.map",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.rtl.css.map",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "css/adminlte.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -899,10 +899,10 @@
       "OriginalItemSpec": "wwwroot\\css\\adminlte.rtl.css.map"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.rtl.min.css",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.rtl.min.css",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "css/adminlte.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -920,10 +920,10 @@
       "OriginalItemSpec": "wwwroot\\css\\adminlte.rtl.min.css"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.rtl.min.css.map",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.rtl.min.css.map",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "css/adminlte.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -941,10 +941,10 @@
       "OriginalItemSpec": "wwwroot\\css\\adminlte.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\base.css",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\base.css",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "css/base#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -962,10 +962,10 @@
       "OriginalItemSpec": "wwwroot\\css\\base.css"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\site.css",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\site.css",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "css/site#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -983,10 +983,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\favicon.ico",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\favicon.ico",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "favicon#[.{fingerprint}]?.ico",
       "AssetKind": "All",
@@ -1004,10 +1004,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\js\\adminlte.js",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\js\\adminlte.js",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "js/adminlte#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1025,10 +1025,10 @@
       "OriginalItemSpec": "wwwroot\\js\\adminlte.js"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\js\\adminlte.js.map",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\js\\adminlte.js.map",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "js/adminlte.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1046,10 +1046,10 @@
       "OriginalItemSpec": "wwwroot\\js\\adminlte.js.map"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\js\\adminlte.min.js",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\js\\adminlte.min.js",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "js/adminlte.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1067,10 +1067,10 @@
       "OriginalItemSpec": "wwwroot\\js\\adminlte.min.js"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\js\\adminlte.min.js.map",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\js\\adminlte.min.js.map",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "js/adminlte.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\js\\adminlte.min.js.map"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\js\\site.js",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\js\\site.js",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "js/site#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1109,10 +1109,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1130,10 +1130,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1151,10 +1151,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1172,10 +1172,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1193,10 +1193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1235,10 +1235,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1256,10 +1256,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1277,10 +1277,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1298,10 +1298,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1319,10 +1319,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1340,10 +1340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1361,10 +1361,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1382,10 +1382,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1403,10 +1403,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1424,10 +1424,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1466,10 +1466,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1487,10 +1487,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1508,10 +1508,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1529,10 +1529,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1550,10 +1550,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1571,10 +1571,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1592,10 +1592,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1613,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1634,10 +1634,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1655,10 +1655,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1676,10 +1676,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1697,10 +1697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1718,10 +1718,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1739,10 +1739,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1760,10 +1760,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1781,10 +1781,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1802,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1823,10 +1823,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1844,10 +1844,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1865,10 +1865,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1886,10 +1886,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1907,10 +1907,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1928,10 +1928,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1949,10 +1949,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1970,10 +1970,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1991,10 +1991,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2012,10 +2012,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -2033,10 +2033,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/bootstrap/LICENSE#[.{fingerprint}]?",
       "AssetKind": "All",
@@ -2054,10 +2054,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/jquery/dist/jquery#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2075,10 +2075,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2096,10 +2096,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -2117,10 +2117,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/jquery/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -2138,10 +2138,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/jquery-validation/dist/additional-methods#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2159,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2180,10 +2180,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2201,10 +2201,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2222,10 +2222,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/jquery-validation/LICENSE#[.{fingerprint}]?.md",
       "AssetKind": "All",
@@ -2243,10 +2243,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2264,10 +2264,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2285,10 +2285,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "AdminWebGosy",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
+      "ContentRoot": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\",
       "BasePath": "_content/AdminWebGosy",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -2309,7 +2309,7 @@
   "Endpoints": [
     {
       "Route": "AdminWebGosy.bundle.scp.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AdminWebGosy.bundle.scp.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AdminWebGosy.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2346,7 +2346,7 @@
     },
     {
       "Route": "AdminWebGosy.eomqj2i1un.bundle.scp.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AdminWebGosy.bundle.scp.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AdminWebGosy.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2391,7 +2391,7 @@
     },
     {
       "Route": "AdminWebGosy.eomqj2i1un.styles.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AdminWebGosy.styles.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AdminWebGosy.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2436,7 +2436,7 @@
     },
     {
       "Route": "AdminWebGosy.styles.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AdminWebGosy.styles.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AdminWebGosy.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2473,7 +2473,7 @@
     },
     {
       "Route": "assets/img/AdminLTEFullLogo.0gtvjjsegk.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\AdminLTEFullLogo.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\AdminLTEFullLogo.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2518,7 +2518,7 @@
     },
     {
       "Route": "assets/img/AdminLTEFullLogo.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\AdminLTEFullLogo.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\AdminLTEFullLogo.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2555,7 +2555,7 @@
     },
     {
       "Route": "assets/img/AdminLTELogo.5xpa8ektv0.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\AdminLTELogo.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\AdminLTELogo.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2600,7 +2600,7 @@
     },
     {
       "Route": "assets/img/AdminLTELogo.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\AdminLTELogo.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\AdminLTELogo.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2637,7 +2637,7 @@
     },
     {
       "Route": "assets/img/avatar.cq7ak03cs5.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\avatar.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\avatar.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2682,7 +2682,7 @@
     },
     {
       "Route": "assets/img/avatar.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\avatar.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\avatar.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2719,7 +2719,7 @@
     },
     {
       "Route": "assets/img/avatar2.clb441sfpl.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\avatar2.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\avatar2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2764,7 +2764,7 @@
     },
     {
       "Route": "assets/img/avatar2.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\avatar2.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\avatar2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2801,7 +2801,7 @@
     },
     {
       "Route": "assets/img/avatar3.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\avatar3.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\avatar3.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2838,7 +2838,7 @@
     },
     {
       "Route": "assets/img/avatar3.zgk1oe2q67.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\avatar3.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\avatar3.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2883,7 +2883,7 @@
     },
     {
       "Route": "assets/img/avatar4.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\avatar4.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\avatar4.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2920,7 +2920,7 @@
     },
     {
       "Route": "assets/img/avatar4.vs5rlt9a4x.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\avatar4.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\avatar4.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2965,7 +2965,7 @@
     },
     {
       "Route": "assets/img/avatar5.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\avatar5.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\avatar5.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3002,7 +3002,7 @@
     },
     {
       "Route": "assets/img/avatar5.q1fgw26yku.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\avatar5.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\avatar5.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3047,7 +3047,7 @@
     },
     {
       "Route": "assets/img/boxed-bg.h242czgvr1.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\boxed-bg.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\boxed-bg.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3092,7 +3092,7 @@
     },
     {
       "Route": "assets/img/boxed-bg.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\boxed-bg.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\boxed-bg.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3129,7 +3129,7 @@
     },
     {
       "Route": "assets/img/boxed-bg.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\boxed-bg.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\boxed-bg.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3166,7 +3166,7 @@
     },
     {
       "Route": "assets/img/boxed-bg.sdebnp4g0a.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\boxed-bg.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\boxed-bg.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3211,7 +3211,7 @@
     },
     {
       "Route": "assets/img/credit/american-express.35gyy4y31i.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\american-express.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\american-express.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3256,7 +3256,7 @@
     },
     {
       "Route": "assets/img/credit/american-express.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\american-express.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\american-express.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3293,7 +3293,7 @@
     },
     {
       "Route": "assets/img/credit/cirrus.haanhu4llm.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\cirrus.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\cirrus.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3338,7 +3338,7 @@
     },
     {
       "Route": "assets/img/credit/cirrus.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\cirrus.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\cirrus.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3375,7 +3375,7 @@
     },
     {
       "Route": "assets/img/credit/mastercard.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\mastercard.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\mastercard.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3412,7 +3412,7 @@
     },
     {
       "Route": "assets/img/credit/mastercard.zxkyuexsld.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\mastercard.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\mastercard.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3457,7 +3457,7 @@
     },
     {
       "Route": "assets/img/credit/paypal.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\paypal.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\paypal.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3494,7 +3494,7 @@
     },
     {
       "Route": "assets/img/credit/paypal.yzy90cp1s8.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\paypal.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\paypal.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3539,7 +3539,7 @@
     },
     {
       "Route": "assets/img/credit/paypal2.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\paypal2.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\paypal2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3576,7 +3576,7 @@
     },
     {
       "Route": "assets/img/credit/paypal2.r4dtqurbzx.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\paypal2.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\paypal2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3621,7 +3621,7 @@
     },
     {
       "Route": "assets/img/credit/visa.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\visa.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\visa.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3658,7 +3658,7 @@
     },
     {
       "Route": "assets/img/credit/visa.s83m7m62mp.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\visa.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\credit\\visa.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3703,7 +3703,7 @@
     },
     {
       "Route": "assets/img/default-150x150.nv54hbhaf2.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\default-150x150.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\default-150x150.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3748,7 +3748,7 @@
     },
     {
       "Route": "assets/img/default-150x150.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\default-150x150.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\default-150x150.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3785,7 +3785,7 @@
     },
     {
       "Route": "assets/img/icons.pgzyby3kf3.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\icons.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\icons.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3830,7 +3830,7 @@
     },
     {
       "Route": "assets/img/icons.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\icons.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\icons.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3867,7 +3867,7 @@
     },
     {
       "Route": "assets/img/photo1.k1cuuvx4v0.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\photo1.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\photo1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3912,7 +3912,7 @@
     },
     {
       "Route": "assets/img/photo1.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\photo1.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\photo1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3949,7 +3949,7 @@
     },
     {
       "Route": "assets/img/photo2.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\photo2.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\photo2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3986,7 +3986,7 @@
     },
     {
       "Route": "assets/img/photo2.qsbhi7q87u.png",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\photo2.png",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\photo2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4031,7 +4031,7 @@
     },
     {
       "Route": "assets/img/photo3.1h2rg7q4y6.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\photo3.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\photo3.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4076,7 +4076,7 @@
     },
     {
       "Route": "assets/img/photo3.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\photo3.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\photo3.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4113,7 +4113,7 @@
     },
     {
       "Route": "assets/img/photo4.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\photo4.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\photo4.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4150,7 +4150,7 @@
     },
     {
       "Route": "assets/img/photo4.u4jlup4h4y.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\photo4.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\photo4.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4195,7 +4195,7 @@
     },
     {
       "Route": "assets/img/prod-1.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\prod-1.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\prod-1.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4232,7 +4232,7 @@
     },
     {
       "Route": "assets/img/prod-1.wlf8jewtsx.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\prod-1.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\prod-1.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4277,7 +4277,7 @@
     },
     {
       "Route": "assets/img/prod-2.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\prod-2.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\prod-2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4314,7 +4314,7 @@
     },
     {
       "Route": "assets/img/prod-2.xbsmo926fa.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\prod-2.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\prod-2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4359,7 +4359,7 @@
     },
     {
       "Route": "assets/img/prod-3.29xc1xt4i8.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\prod-3.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\prod-3.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4404,7 +4404,7 @@
     },
     {
       "Route": "assets/img/prod-3.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\prod-3.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\prod-3.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4441,7 +4441,7 @@
     },
     {
       "Route": "assets/img/prod-4.22ko3qvybp.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\prod-4.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\prod-4.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4486,7 +4486,7 @@
     },
     {
       "Route": "assets/img/prod-4.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\prod-4.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\prod-4.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4523,7 +4523,7 @@
     },
     {
       "Route": "assets/img/prod-5.jisre6nqys.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\prod-5.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\prod-5.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4568,7 +4568,7 @@
     },
     {
       "Route": "assets/img/prod-5.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\prod-5.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\prod-5.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4605,7 +4605,7 @@
     },
     {
       "Route": "assets/img/user1-128x128.gjwx06c2ao.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user1-128x128.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user1-128x128.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4650,7 +4650,7 @@
     },
     {
       "Route": "assets/img/user1-128x128.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user1-128x128.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user1-128x128.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4687,7 +4687,7 @@
     },
     {
       "Route": "assets/img/user2-160x160.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user2-160x160.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user2-160x160.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4724,7 +4724,7 @@
     },
     {
       "Route": "assets/img/user2-160x160.wycn2zoxwx.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user2-160x160.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user2-160x160.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4769,7 +4769,7 @@
     },
     {
       "Route": "assets/img/user3-128x128.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user3-128x128.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user3-128x128.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4806,7 +4806,7 @@
     },
     {
       "Route": "assets/img/user3-128x128.okr9lll0pm.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user3-128x128.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user3-128x128.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4851,7 +4851,7 @@
     },
     {
       "Route": "assets/img/user4-128x128.e0nvstqqn7.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user4-128x128.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user4-128x128.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4896,7 +4896,7 @@
     },
     {
       "Route": "assets/img/user4-128x128.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user4-128x128.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user4-128x128.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4933,7 +4933,7 @@
     },
     {
       "Route": "assets/img/user5-128x128.9y8p72my7x.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user5-128x128.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user5-128x128.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4978,7 +4978,7 @@
     },
     {
       "Route": "assets/img/user5-128x128.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user5-128x128.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user5-128x128.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5015,7 +5015,7 @@
     },
     {
       "Route": "assets/img/user6-128x128.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user6-128x128.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user6-128x128.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5052,7 +5052,7 @@
     },
     {
       "Route": "assets/img/user6-128x128.luyv40uo9o.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user6-128x128.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user6-128x128.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5097,7 +5097,7 @@
     },
     {
       "Route": "assets/img/user7-128x128.331q5m3pqo.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user7-128x128.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user7-128x128.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5142,7 +5142,7 @@
     },
     {
       "Route": "assets/img/user7-128x128.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user7-128x128.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user7-128x128.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5179,7 +5179,7 @@
     },
     {
       "Route": "assets/img/user8-128x128.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user8-128x128.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user8-128x128.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5216,7 +5216,7 @@
     },
     {
       "Route": "assets/img/user8-128x128.ki1y5lpl0h.jpg",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user8-128x128.jpg",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\assets\\img\\user8-128x128.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5261,7 +5261,7 @@
     },
     {
       "Route": "css/adminlte.3ti8pkgn20.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5306,7 +5306,7 @@
     },
     {
       "Route": "css/adminlte.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5343,7 +5343,7 @@
     },
     {
       "Route": "css/adminlte.css.3zpwalpuda.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5388,7 +5388,7 @@
     },
     {
       "Route": "css/adminlte.css.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5425,7 +5425,7 @@
     },
     {
       "Route": "css/adminlte.min.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.min.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5462,7 +5462,7 @@
     },
     {
       "Route": "css/adminlte.min.css.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.min.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5499,7 +5499,7 @@
     },
     {
       "Route": "css/adminlte.min.css.nt7juh6h50.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.min.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5544,7 +5544,7 @@
     },
     {
       "Route": "css/adminlte.min.gjrdkc01zn.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.min.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5589,7 +5589,7 @@
     },
     {
       "Route": "css/adminlte.rtl.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.rtl.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5626,7 +5626,7 @@
     },
     {
       "Route": "css/adminlte.rtl.css.a1v63x9wfv.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.rtl.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5671,7 +5671,7 @@
     },
     {
       "Route": "css/adminlte.rtl.css.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.rtl.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5708,7 +5708,7 @@
     },
     {
       "Route": "css/adminlte.rtl.l5kagb46um.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.rtl.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5753,7 +5753,7 @@
     },
     {
       "Route": "css/adminlte.rtl.min.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.rtl.min.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5790,7 +5790,7 @@
     },
     {
       "Route": "css/adminlte.rtl.min.css.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.rtl.min.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5827,7 +5827,7 @@
     },
     {
       "Route": "css/adminlte.rtl.min.css.q8ls3kvgdx.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.rtl.min.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5872,7 +5872,7 @@
     },
     {
       "Route": "css/adminlte.rtl.min.l2ewhp8w1q.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.rtl.min.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5917,7 +5917,7 @@
     },
     {
       "Route": "css/base.3uj8qaeuyb.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\base.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\base.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5962,7 +5962,7 @@
     },
     {
       "Route": "css/base.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\base.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\base.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5999,7 +5999,7 @@
     },
     {
       "Route": "css/site.c2tiyv64ts.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\site.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6044,7 +6044,7 @@
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\site.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6081,7 +6081,7 @@
     },
     {
       "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\favicon.ico",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6126,7 +6126,7 @@
     },
     {
       "Route": "favicon.ico",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\favicon.ico",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6163,7 +6163,7 @@
     },
     {
       "Route": "js/adminlte.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\js\\adminlte.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\js\\adminlte.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6200,7 +6200,7 @@
     },
     {
       "Route": "js/adminlte.js.ddky5r22iq.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\js\\adminlte.js.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\js\\adminlte.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6245,7 +6245,7 @@
     },
     {
       "Route": "js/adminlte.js.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\js\\adminlte.js.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\js\\adminlte.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6282,7 +6282,7 @@
     },
     {
       "Route": "js/adminlte.min.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\js\\adminlte.min.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\js\\adminlte.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6319,7 +6319,7 @@
     },
     {
       "Route": "js/adminlte.min.js.3xv8oehij3.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\js\\adminlte.min.js.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\js\\adminlte.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6364,7 +6364,7 @@
     },
     {
       "Route": "js/adminlte.min.js.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\js\\adminlte.min.js.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\js\\adminlte.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6401,7 +6401,7 @@
     },
     {
       "Route": "js/adminlte.min.sc6ou6m5p0.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\js\\adminlte.min.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\js\\adminlte.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6446,7 +6446,7 @@
     },
     {
       "Route": "js/adminlte.s5dfy8cuvy.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\js\\adminlte.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\js\\adminlte.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6491,7 +6491,7 @@
     },
     {
       "Route": "js/site.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\js\\site.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6528,7 +6528,7 @@
     },
     {
       "Route": "js/site.xtxxf3hu2r.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\js\\site.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6573,7 +6573,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6610,7 +6610,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.73kdqttayv.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6655,7 +6655,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6692,7 +6692,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.bpk8xqwxhs.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6737,7 +6737,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6774,7 +6774,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.8inm30yfxf.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6819,7 +6819,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6856,7 +6856,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.mpyigms19s.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6901,7 +6901,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6938,7 +6938,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.4gxs3k148c.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6983,7 +6983,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7020,7 +7020,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.9b9oa1qrmt.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7065,7 +7065,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7102,7 +7102,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.fctod5rc9n.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7147,7 +7147,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7184,7 +7184,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.ve6x09088i.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7229,7 +7229,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.agp80tu62r.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7274,7 +7274,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7311,7 +7311,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7348,7 +7348,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.st1cbwfwo5.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7393,7 +7393,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7430,7 +7430,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.5vj65cig9w.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7475,7 +7475,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7512,7 +7512,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.unj9p35syc.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7557,7 +7557,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7594,7 +7594,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.2q4vfeazbq.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7639,7 +7639,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7676,7 +7676,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7713,7 +7713,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7750,7 +7750,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.o371a8zbv2.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7795,7 +7795,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.n1oizzvkh6.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7840,7 +7840,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.q2ku51ktnl.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7885,7 +7885,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.7na4sro3qu.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7930,7 +7930,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7967,7 +7967,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.jeal3x0ldm.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8012,7 +8012,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8049,7 +8049,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8086,7 +8086,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8123,7 +8123,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.okkk44j0xs.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8168,7 +8168,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.f8imaxxbri.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8213,7 +8213,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.0wve5yxp74.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8258,7 +8258,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8295,7 +8295,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.cwzlr5n8x4.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8340,7 +8340,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8377,7 +8377,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8414,7 +8414,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8451,7 +8451,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.wmug9u23qg.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8496,7 +8496,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.npxfuf8dg6.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8541,7 +8541,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8578,7 +8578,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.j75batdsum.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8623,7 +8623,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8660,7 +8660,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.16095smhkz.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8705,7 +8705,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8742,7 +8742,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8779,7 +8779,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.vy0bq9ydhf.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8824,7 +8824,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.b4skse8du6.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8869,7 +8869,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8906,7 +8906,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.ab1c3rmv7g.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8951,7 +8951,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8988,7 +8988,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9025,7 +9025,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.56d2bn4wt9.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9070,7 +9070,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9107,7 +9107,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.u3xrusw2ol.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9152,7 +9152,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.tey0rigmnh.css",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9197,7 +9197,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9234,7 +9234,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.kbynt5jhd9.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9279,7 +9279,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9316,7 +9316,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.l2av4jpuoj.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9361,7 +9361,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.25iw1kog22.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9406,7 +9406,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9443,7 +9443,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.c2nslu3uf3.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9488,7 +9488,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9525,7 +9525,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9562,7 +9562,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.2lgwfvgpvi.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9607,7 +9607,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9644,7 +9644,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.m39kt2b5c9.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9689,7 +9689,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9726,7 +9726,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9763,7 +9763,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.wsezl0heh6.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9808,7 +9808,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.um2aeqy4ik.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9853,7 +9853,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9890,7 +9890,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.6ukhryfubh.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9935,7 +9935,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9972,7 +9972,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10009,7 +10009,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10046,7 +10046,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.u33ctipx7g.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10091,7 +10091,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.zwph15dxgs.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10136,7 +10136,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.o4kw7cc6tf.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10181,7 +10181,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10218,7 +10218,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE.81b7ukuj9c",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10263,7 +10263,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.fwhahm2icz.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10308,7 +10308,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10345,7 +10345,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.5pze98is44.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10390,7 +10390,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.dd6z7egasc.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10435,7 +10435,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10472,7 +10472,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.map",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10509,7 +10509,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.mlv21k5csn.txt",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10554,7 +10554,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.txt",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10591,7 +10591,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.ay5nd8zt9x.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10636,7 +10636,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10673,7 +10673,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.9oaff4kq20.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10718,7 +10718,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10755,7 +10755,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10792,7 +10792,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.b7iojwaux1.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10837,7 +10837,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10874,7 +10874,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.pzqfkb6aqo.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10919,7 +10919,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.md",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10956,7 +10956,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.x0q3zqp4vz.md",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11001,7 +11001,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.47otxtyo56.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11046,7 +11046,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11083,7 +11083,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.4v8eqarkd7.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11128,7 +11128,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11165,7 +11165,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.356vix0kms.txt",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11210,7 +11210,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.txt",
-      "AssetFile": "D:\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {

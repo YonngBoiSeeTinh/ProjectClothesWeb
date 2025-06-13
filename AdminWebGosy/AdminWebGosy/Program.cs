@@ -2,6 +2,7 @@
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddHttpClient();
+builder.Services.AddLogging();
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

@@ -16,7 +16,7 @@ const MyOrders = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [currentPage, setCurrentPage] = useState(1);
-    const [ordersPerPage] = useState(5); // Display 5 orders per page
+    const [ordersPerPage] = useState(5);    
     const [selectedOrder, setSelectedOrder] = useState(null); // Selected order for details
     const [orderDetails, setOrderDetails] = useState([]);
     const [colorSizes, setColorsizes] = useState([]);

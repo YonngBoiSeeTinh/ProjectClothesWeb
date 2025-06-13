@@ -1,0 +1,89 @@
+﻿@using WebAPI.Models
+@model IEnumerable<ColorSize>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+@{
+    if(Model.Count() > 0){
+        
+            <table class="table w-100 table-hover table-striped">
+
+                <thead>
+                    <tr>
+                        <th>Màu</th>
+                        <th>Size</th>
+                        <th>Số lượng</th>
+                        <th></th>
+                    </tr>
+                </thead>
+            <tbody>
+                @foreach(var colorSize in Model){
+                   
+                        <tr>
+                            <td>@colorSize.Color</td>
+                            <td>@colorSize.Size</td>
+                            <td>
+                                @colorSize.Quantity
+
+                            </td>
+                            <td>
+                                <a href="#" class="btn btn-sm btn-gray" onclick="openEditModal(@colorSize.Id, event)">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                <form asp-action="DeleteColor" method="post" class="d-inline" onsubmit="return confirmDelete(event)">
+                                    <input type="hidden" name="id" value="@colorSize.Id" />
+                                <input type="hidden" name="ProductId" value="@colorSize.ProductId" />
+                                    <button type="submit" class="btn btn-sm btn-danger">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                    
+                }
+            </tbody>
+            </table>
+            <div id="editColorModalLayout"></div>
+       
+    }
+    else{
+        <p>Chưa có dữ liệu màu</p>
+    }
+}
+
+<script>
+    function confirmDelete(event) {
+        const confirmed = confirm("Bạn có chắc chắn muốn xóa sản phẩm này không?");
+        if (!confirmed) {
+            event.preventDefault();
+        }
+        return confirmed;
+    }
+    function openEditModal(colorSizeId, event) {
+        if (event) event.preventDefault();
+
+        $.ajax({
+            url: '/ColorSize/OpenEditModal',
+            data: { colorSizeId: colorSizeId },
+            success: function (html) {
+               
+                $('#editColorModalLayout').html(html);
+                const modalElement = document.getElementById(`editColorSizeModal-${colorSizeId}`);
+                if (modalElement) {
+                    const existingInstance = bootstrap.Modal.getInstance(modalElement);
+                    if (existingInstance) {
+                        existingInstance.dispose();
+                    }
+                    const modalInstance = new bootstrap.Modal(modalElement);
+                    modalInstance.show();
+                } else {
+                    console.error('Không tìm thấy modal sau khi tải!');
+                }
+            },
+            error: function () {
+                alert('Không tải được modal chỉnh sửa màu');
+            }
+        });
+    }
+
+
+</script>

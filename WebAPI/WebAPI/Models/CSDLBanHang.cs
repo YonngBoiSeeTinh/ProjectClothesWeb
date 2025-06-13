@@ -302,7 +302,7 @@ public partial class CSDLBanHang : DbContext
             entity.Property(e => e.Stars)
                 .HasColumnName("stars")
                 .HasColumnType("float");
-            entity.Property(e => e.Content).HasMaxLength(250)
+            entity.Property(e => e.Content)
                 .HasColumnName("content");
             entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("(getdate())")
@@ -332,6 +332,9 @@ public partial class CSDLBanHang : DbContext
             entity.Property(e => e.EndAt)
                 .HasColumnType("datetime")
                 .HasColumnName("end_at");
+            entity.Property(e => e.StartAt)
+               .HasColumnType("datetime")
+               .HasColumnName("start_at");
             entity.Property(e => e.Name)
                 .HasMaxLength(255)
                 .HasColumnName("name");

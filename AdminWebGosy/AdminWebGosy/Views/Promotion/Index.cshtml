@@ -1,0 +1,157 @@
+﻿@using WebAPI.Models
+@model IEnumerable<Promotion>
+@{
+    ViewData["Title"] = "Promotion Page";
+}
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<main class="app-main mt-4">
+    <div class="app-content">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h1 class="h4">Quản lý danh mục</h1>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addCategoryModal">
+                <i class="fas fa-plus"></i> Add New Promotion
+            </button>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-hover table-striped">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Mã giảm giá</th>
+                        <th scope="col">Tên</th>
+                        <th scope="col">Giá trị giảm</th>
+                        <th scope="col">Ngày bắt đầu</th>
+                        <th scope="col">Ngày kết thúc</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var promotion in Model)
+                    {
+                        <tr>
+                            <td>@promotion.Code</td>
+                            <td>@promotion.Name</td>
+                            <td>@((int)promotion.Value) %</td>
+
+                            <td>@promotion.StartAt?.ToString("yyyy-MM-dd")</td>
+                            <td>@promotion.EndAt?.ToString("yyyy-MM-dd")</td>
+                            <td>
+                                <button class="btn btn-sm btn-gray" onclick='openEditPromotionModal(@promotion.Id);'>
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <form asp-action="DeleteCategory" method="post" class="d-inline" onsubmit="return confirmDelete(event)">
+                                    <input type="hidden" name="id" value="@promotion.Id" />
+                                    <button type="submit" class="btn btn-sm btn-danger">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </form>
+                            </td>
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+        </div>
+        <div id="editPromotionModalLayout"></div>
+        <!-- Add promotion form -->
+        <div class="modal fade" id="addPromotionModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <form asp-action="AddPromotion" asp-controller="Promotion" method="post" enctype="multipart/form-data">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="addCategoryModalLabel">Thêm danh mục</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label for="categoryName" class="form-label">Tên mã giảm giá</label>
+                                <input type="text" class="form-control"  name="Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="categoryDescription" class="form-label">Mã</label>
+                                <input type="number" class="form-control" name="Code" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="categoryDescription" class="form-label">Giá trị giảm</label>
+                                <input type="number" class="form-control"  name="Value" required>
+                            </div>
+                          
+                            <div class="mb-3">
+                                <label for="categoryDescription" class="form-label">Ngày bắt đầu</label>
+                                <input type="datetime" class="form-control"  name="StartAt" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="categoryDescription" class="form-label">Ngày kết thúc</label>
+                                <input type="datetime" class="form-control"  name="EndAt" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="categoryDescription" class="form-label">Mức mua tối thiểu</label>
+                                <input type="number" class="form-control"  name="MinPrice" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="categoryDescription" class="form-label">Giảm tối đa</label>
+                                <input type="number" class="form-control"  name="MaxValue" required>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                            <button type="submit" class="btn btn-primary">Thêm danh mục</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+@if (TempData["ApiLog"] != null)
+{
+    <script>
+        console.log("API Log: @TempData["ApiLog"]");
+    </script>
+}
+
+<script>
+   
+    function confirmDelete(event) {
+        const confirmed = confirm("Bạn có chắc chắn muốn xóa danh mục này không?");
+        if (!confirmed) {
+            event.preventDefault();
+        }
+        return confirmed;
+    }
+
+    function openEditPromotionModal(promoId, event) {
+        if (event) event.preventDefault();
+
+        $.ajax({
+            url: '/Promotion/OpenEditModal',
+            data: { promoId: promoId },
+            success: function (html) {
+                $('#editPromotionModalLayout').html(html);
+                const modalElement = document.getElementById(`editPromotionModal`);
+                if (modalElement) {
+                    const existingInstance = bootstrap.Modal.getInstance(modalElement);
+                    if (existingInstance) {
+                        existingInstance.dispose();
+                    }
+                    const modalInstance = new bootstrap.Modal(modalElement);
+                    modalInstance.show();
+                } else {
+                    console.error('Không tìm thấy modal sau khi tải!');
+                }
+            },
+            error: function () {
+                alert('Không tải được modal chỉnh danh mujc');
+            }
+        });
+    }
+</script>

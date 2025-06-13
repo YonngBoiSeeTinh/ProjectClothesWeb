@@ -5,7 +5,7 @@ const Banner = ({ data }) => {
     const navigate = useNavigate();
 
     const handleButtonClick = () => {
-        navigate(`${PathNames.PRODUCT_DETAILS}/9`);
+        navigate(`${PathNames.PRODUCT_DETAILS}/7`);
     };
     return (
         <div className="min-h-[550px] flex justify-center items-center py-12">

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DoAnWebNangCao\\AdminWebGosy\\AdminWebGosy\\AdminWebGosy.csproj": {}
+    "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\AdminWebGosy.csproj": {}
   },
   "projects": {
-    "D:\\DoAnWebNangCao\\AdminWebGosy\\AdminWebGosy\\AdminWebGosy.csproj": {
+    "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\AdminWebGosy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DoAnWebNangCao\\AdminWebGosy\\AdminWebGosy\\AdminWebGosy.csproj",
+        "projectUniqueName": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\AdminWebGosy.csproj",
         "projectName": "AdminWebGosy",
-        "projectPath": "D:\\DoAnWebNangCao\\AdminWebGosy\\AdminWebGosy\\AdminWebGosy.csproj",
+        "projectPath": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\AdminWebGosy.csproj",
         "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
-        "outputPath": "D:\\DoAnWebNangCao\\AdminWebGosy\\AdminWebGosy\\obj\\",
+        "outputPath": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -9,12 +9,11 @@ const CheckoutBuyNow = () => {
     const location = useLocation();
     const navigate = useNavigate();
     const user = useSelector((state) => state.user);
-    console.log("user", user);
+  
     const userId = user?.id;
     const productBuyNow = location.state?.product;
     const [paymentMethod, setPaymentMethod] = useState("Tiền mặt");
-    const [accounts, setAccount] = useState([]);
-    console.log("productBuyNow", productBuyNow);
+   
     const [customerInfo, setCustomerInfo] = useState({
         name: user.name || "",
         email: localStorage.getItem("email"),
@@ -28,42 +27,24 @@ const CheckoutBuyNow = () => {
     const [discounts, setDiscounts] = useState([]);
     const [selectedDiscount, setSelectedDiscount] = useState(null);
     const [discountedAmount, setDiscountedAmount] = useState(0);
-    // Hàm lấy dữ liệu color
-    const fetchColorSize = async () => {
-        try {
-            const response = await axios.get(`${API_URL}/api/ColorSizes/${productBuyNow.colorSizeId}`);
-            if (response.status === 200) {
-                const data = response.data;
-                return data
-            } else {
-                console.error(
-                    `Failed to fetch ColorSizes: ${response.status} ${response.statusText}`
-                );
-                return {}
-            }
-        } catch (error) {
-            console.error("Error fetching ColorSizes:", error);
-            return {}
-        }
-    };
-    const updateStock = async (colorSizeId, quantity) => {
-        const updateColorSize = { ...await fetchColorSize(colorSizeId) };
-        updateColorSize.quantity -= quantity;
-        if(updateColorSize){
+
+    const updateStock = async (productId,colorSizeId, quantity) => {
+      
             try {
                 const response = await fetch(
-                    `${API_URL}/api/ColorSizes/${colorSizeId}`,
+                    `${API_URL}/api/ColorSizes/updateStock/${colorSizeId}?quantity=${quantity}`,
                     {
                         method: "PUT",
                         headers: {
-                            "Content-Type": "application/json", 
+                            "Content-Type": "application/json", // Không bắt buộc nếu bạn không gửi body
                         },
-                        body: JSON.stringify(updateColorSize),
                     }
                 );
+                console.log("update color response", response);
+             
                 if (response.ok) {
-                   
-                    console.log('update color  succsess');
+                     await updateSold(productId, quantity)
+                  
                 }
             } catch (error) {
                 console.error("Lỗi khi cập nhật Số lượng:", error);
@@ -76,48 +57,28 @@ const CheckoutBuyNow = () => {
                     pauseOnHover: true
                 });
             }
-        }
-    };
-    const fetchProduct = async (productId) => {
-        try {
-            const response = await axios.get(`${API_URL}/api/Products/${productId}`);
-            if (response.status === 200) {
-                const data = response.data;
-                return data
-            } else {
-                console.error(
-                    `Failed to fetch Products: ${response.status} ${response.statusText}`
-                );
-                return {}
-            }
-        } catch (error) {
-            console.error("Error fetching Products:", error);
-            return {}
-        }
-    };
-    const updateSold = async (productId, quantity) => {
-        const product = await fetchProduct(productId)
-        try {
-              const formData = new FormData();
-        product.sold = product.sold + quantity
-        Object.keys(product).forEach((key) => {
-            formData.append(key, product[key]);
-        });
-        formData.append("createdAt", product.createdAt);
         
+    };
+   
+    const updateSold = async (productId, quantity) => {
+        try {
+       
         const response = await fetch(
-            `${API_URL}/api/Products/${productId}`,
+           `${API_URL}/api/Products/updateSold/${productId}?quantity=${quantity}`,
             {
                 method: "PUT",
-                body: formData,
+                headers: {
+                    "Content-Type": "application/json", // Không bắt buộc nếu bạn không gửi body
+                },
             }
         )
-        console.log(response);
+        console.log('update product',response);
         if (response.status === 204) {
             console.log('update product succsess');
+            console.log('update color  succsess');
         }
         } catch (error) {
-            Modal.error({
+            console.error({
                 title: "Lỗi",
                 content:
                     error.response?.data?.message || "Không thể update product",
@@ -365,8 +326,8 @@ const CheckoutBuyNow = () => {
                     }
                 );
                 if (orderDetailResponse.status === 201) {
-                    await updateSold(productBuyNow.productId, productBuyNow.quantity)
-                    await updateStock(productBuyNow.colorSizeId, productBuyNow.quantity)
+                   
+                    await updateStock(productBuyNow.productId,productBuyNow.colorSizeId, productBuyNow.quantity)
                     notification.success({
                         message: "Thành công!",
                         description: "Đơn hàng mới đã được tạo",

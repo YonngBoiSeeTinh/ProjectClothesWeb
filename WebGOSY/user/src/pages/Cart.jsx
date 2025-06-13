@@ -99,6 +99,7 @@ const Cart = () => {
             fetchColorSizes();
         }
     }, [cartItems]);
+ 
     // Tính tổng giá tiền
     const calculateTotal = () => {
         return cartItems.reduce(
@@ -148,14 +149,13 @@ const Cart = () => {
                             "Content-Type": "application/json",
                         },
                         body: JSON.stringify({
-                            ...Cart,
+                            ...cart,
                             quantity: newQuantity,
                         }),
                     }
                 );
 
-                const data = await response.json();
-                console.log('data ', data);
+               
                 if (response.status == 400) {
                     setOverStockError(data.message); // Hiển thị lỗi nếu vượt quá tồn kho
                 } else {
@@ -195,6 +195,7 @@ const Cart = () => {
                 ? prev.filter((id) => id !== id)
                 : [...prev, id]
         );
+       
     };
 
     // Thêm hàm xóa nhiều sản phẩm
@@ -227,7 +228,7 @@ const Cart = () => {
             console.error("Lỗi khi xóa sản phẩm khỏi giỏ hàng:", error);
         }
     };
-    
+     
     // Sửa hàm navigate để thêm callback xóa giỏ hàng
     const handleCheckout = () => {
         const selectedProducts = cartItems.filter((item) =>
@@ -237,7 +238,7 @@ const Cart = () => {
 
         // Lưu selectedItems vào localStorage để có thể xóa sau khi thanh toán thành công
         localStorage.setItem("checkoutItems", JSON.stringify(selectedItems));
-
+        console.log('selectedProducts',selectedProducts);
         navigate(PathNames.CHECKOUT, {
             state: {
                 cartItems: selectedProducts,
