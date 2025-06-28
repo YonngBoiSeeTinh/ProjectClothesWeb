@@ -62,13 +62,12 @@ namespace WebAPI.Controllers
             }
         }
         // PUT: api/Accounts/5
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutAccount(int id, Account Account)
+        [HttpPut("changePass/{userId}")]
+        public async Task<IActionResult> PutAccount(int userId, String newPass)
         {
             try
             {
-                Account.Id = id;
-                await _accountRepository.UpdateAsync(Account);
+                await _accountService.UpdateAccountAsync(userId, newPass);
                 return NoContent();
             }
             catch (DbUpdateConcurrencyException ex)

@@ -44,7 +44,7 @@ const MyOrders = () => {
             );
             const data = await response.json();
             console.log('data', data);
-            setOrders(data);
+            setOrders(data || {});
             setLoading(false);
         } catch (err) {
             setError(err.message);
@@ -371,12 +371,7 @@ const MyOrders = () => {
                 <h1 className="text-2xl font-semibold mb-6 text-blue-800">
                     Lịch sử giao dịch
                 </h1>
-                {loading ? (
-                    <p>Loading...</p>
-                ) : error ? (
-                    <p className="text-red-600">Error: {error}</p>
-                ) : (
-                    <>
+                
                         {orders.length === 0 ? (
                             <p className="text-center text-lg">
                                 Bạn không có đơn hàng nào.
@@ -776,8 +771,8 @@ const MyOrders = () => {
                                 </Modal>
                             </>
                         )}
-                    </>
-                )}
+                   
+                
             </div>
         </div>
     );

@@ -1,0 +1,22 @@
+﻿@using WebAPI.Models
+@model IEnumerable<OrderDetail>
+
+<table id="orderDetailTable" class="table w-100 table-hover table-striped">
+    <thead>
+        <tr>
+            <th>Sản phẩm</th>
+            <th>Số lượng</th>
+            <th>Giá</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var order in Model){
+            <tr>
+                <td >@order.ProductName </td>
+                <td>@order.Quantity</td>
+                <td>@order.Price.ToString("N0", new System.Globalization.CultureInfo("vi-VN")) đ</td>
+            </tr>
+        }
+       
+    </tbody>
+</table>

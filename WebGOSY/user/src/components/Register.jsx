@@ -83,11 +83,9 @@ const Register = ({ onRegisterSuccess }) => {
                 formData.append("phone", phone);
                 formData.append("role", 4);
                 formData.append("totalBuy", 0);
-                formData.append("account", 0);
                 if (userAvatar) {
                     formData.append("image", userAvatar);
                 }
-    
                 // Gửi yêu cầu tạo user
                 const response = await fetch(`${API_URL}/api/Users`, {
                     method: "POST",
@@ -101,7 +99,6 @@ const Register = ({ onRegisterSuccess }) => {
                 const userId = data?.id; 
                 console.log('userId', userId);
                 await handelCreateAccount(userId);
-               
                 }
                 
     

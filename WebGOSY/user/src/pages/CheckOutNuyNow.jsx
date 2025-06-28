@@ -68,7 +68,7 @@ const CheckoutBuyNow = () => {
             {
                 method: "PUT",
                 headers: {
-                    "Content-Type": "application/json", // Không bắt buộc nếu bạn không gửi body
+                    "Content-Type": "application/json",
                 },
             }
         )
@@ -178,7 +178,6 @@ const CheckoutBuyNow = () => {
                     );
                     formData.append("Role", "1");
                     formData.append("TotalBuy", "0");
-
                     const createUserResponse = await fetch(
                         `${API_URL}/api/Users`,
                         {
@@ -189,7 +188,6 @@ const CheckoutBuyNow = () => {
                     if (createUserResponse.status === 201) {
                         const createdUser = await createUserResponse.json();
                         userIdToUse = createdUser.id; // Lấy id của người dùng vừa tạo
-
                        
                     } else {
                         notification.error({
@@ -298,56 +296,56 @@ const CheckoutBuyNow = () => {
                 }
             } else{
                  // Gửi yêu cầu tạo đơn hàng
-            const orderResponse = await fetch(`${API_URL}/api/Orders`, {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(paymentData),
-            });
+                const orderResponse = await fetch(`${API_URL}/api/Orders`, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(paymentData),
+                });
 
-            if (orderResponse.status === 201) {
-                const orderRes = await orderResponse.json();
-                const orderDetail = {
-                    orderId: orderRes.id,
-                    colorSizeId: productBuyNow.colorSizeId,
-                    quantity: productBuyNow.quantity,
-                    price: productBuyNow.price,
-                    productId: productBuyNow.productId,
-                };
-                const orderDetailResponse = await fetch(
-                    `${API_URL}/api/OrderDetails`,
-                    {
-                        method: "POST",
-                        headers: {
-                            "Content-Type": "application/json",
-                        },
-                        body: JSON.stringify(orderDetail),
+                if (orderResponse.status === 201) {
+                    const orderRes = await orderResponse.json();
+                    const orderDetail = {
+                        orderId: orderRes.id,
+                        colorSizeId: productBuyNow.colorSizeId,
+                        quantity: productBuyNow.quantity,
+                        price: productBuyNow.price,
+                        productId: productBuyNow.productId,
+                    };
+                    const orderDetailResponse = await fetch(
+                        `${API_URL}/api/OrderDetails`,
+                        {
+                            method: "POST",
+                            headers: {
+                                "Content-Type": "application/json",
+                            },
+                            body: JSON.stringify(orderDetail),
+                        }
+                    );
+                    if (orderDetailResponse.status === 201) {
+                    
+                        await updateStock(productBuyNow.productId,productBuyNow.colorSizeId, productBuyNow.quantity)
+                        notification.success({
+                            message: "Thành công!",
+                            description: "Đơn hàng mới đã được tạo",
+                            duration: 4,
+                            placement: "bottomRight",
+                        });
+                        if (userId)
+                        navigate("/my-orders");
+                        else navigate("/");
                     }
-                );
-                if (orderDetailResponse.status === 201) {
-                   
-                    await updateStock(productBuyNow.productId,productBuyNow.colorSizeId, productBuyNow.quantity)
-                    notification.success({
-                        message: "Thành công!",
-                        description: "Đơn hàng mới đã được tạo",
+                } else {
+                    notification.error({
+                        message: 'Thất bại',
+                        description: 'Đã xảy ra lỗi khi tạo đơn hàng. Vui lòng thử lại.',
                         duration: 4,
                         placement: "bottomRight",
+                        showProgress: true,
+                        pauseOnHover: true
                     });
-                    if (userId)
-                     navigate("/my-orders");
-                    else navigate("/");
                 }
-            } else {
-                notification.error({
-                    message: 'Thất bại',
-                    description: 'Đã xảy ra lỗi khi tạo đơn hàng. Vui lòng thử lại.',
-                    duration: 4,
-                    placement: "bottomRight",
-                    showProgress: true,
-                    pauseOnHover: true
-                });
-            }
             }
            
         } catch (error) {

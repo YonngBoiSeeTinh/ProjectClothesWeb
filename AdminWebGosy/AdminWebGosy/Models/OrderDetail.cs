@@ -17,5 +17,7 @@ public partial class OrderDetail : BaseEntity
 
     public int? ProductId { get; set; }
 
-    
+    public String? ProductName { get; set; }
+
+
 }

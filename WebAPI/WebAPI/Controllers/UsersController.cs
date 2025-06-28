@@ -5,6 +5,7 @@ using WebAPI.Factory;
 using WebAPI.Models;
 using WebAPI.Services;
 using Newtonsoft.Json;
+using System.Security.Principal;
 
 namespace WebAPI.Controllers
 {
@@ -80,7 +81,6 @@ namespace WebAPI.Controllers
                     Address = userDTO.Address,
                     Role = userDTO.Role,
                     TotalBuy = userDTO.TotalBuy,
-                    Account = userDTO.Account,
                     //DateofBirth = userDTO.DateofBirth,
                     CreatedAt = userDTO.CreatedAt,
                 };
@@ -127,7 +127,7 @@ namespace WebAPI.Controllers
                     Address = userDTO.Address,
                     Role = userDTO.Role,
                     TotalBuy = userDTO.TotalBuy,
-                    Account = 0,
+                  
                  
                 };
                 if (image == null)
@@ -161,6 +161,9 @@ namespace WebAPI.Controllers
                 return NotFound(new { message = ex.Message });
             }
         }
+
+
+      
     }
 
 }

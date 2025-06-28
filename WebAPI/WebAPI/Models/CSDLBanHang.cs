@@ -381,7 +381,6 @@ public partial class CSDLBanHang : DbContext
             entity.HasKey(e => e.Id).HasName("PK__Users__3213E83F43C6B8C1");
 
             entity.Property(e => e.Id).HasColumnName("id");
-            entity.Property(e => e.Account).HasColumnName("account");
             entity.Property(e => e.Address)
                 .HasMaxLength(255)
                 .HasColumnName("address");

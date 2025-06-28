@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 
 namespace WebAPI.Models;
 
-    public partial class User : BaseEntity, IHasImage
+    public partial class User : BaseEntity
 {
     public string Name { get; set; } = null!;
 
@@ -14,7 +14,7 @@ namespace WebAPI.Models;
 
     public int? Role { get; set; }
 
-    public byte[]? Image { get; set; }
+    public String Image { get; set; }
 
     public decimal? TotalBuy { get; set; }
 

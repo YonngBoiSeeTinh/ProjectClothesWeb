@@ -18,7 +18,5 @@ namespace WebAPI.Models;
 
     public decimal? TotalBuy { get; set; }
 
-    public int? Account { get; set; }
 
-   
 }

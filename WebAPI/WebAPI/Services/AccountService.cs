@@ -45,6 +45,15 @@ namespace WebAPI.Services
 
             return account;
         }
+        public async Task UpdateAccountAsync(int userId, String newPass)
+        {
+            var account = await _context.Accounts.FirstOrDefaultAsync(a => a.UserId == userId);
+            // Mã hóa mật khẩu
+            account.Password = BCrypt.Net.BCrypt.HashPassword(newPass);
+            _context.Accounts.Update(account);
+            await _context.SaveChangesAsync();
+
+        }
         public async Task<int> LoginAsync(string email, string password)
         {
             // Tìm tài khoản theo email

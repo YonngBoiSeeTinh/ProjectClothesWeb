@@ -45,7 +45,7 @@
                               <button class="btn btn-sm  m-2"
                                         data-bs-toggle="modal"
                                         data-bs-target="#orderDetail-@order.Id"
-                                        onclick="loadOrderDetails(@order.Id)">
+                                        onclick="openOrderModal(@order.Id, event)">
                                     <i class="fas fa-eye"></i>
                               </button>
                               <form asp-action="UpdateOrder" asp-controller="Order" method="post">
@@ -84,106 +84,37 @@
                 </tbody>
             </table>
         </div>
-        @foreach (var order in Model)
-        {
-            <div class="modal fade mt-2" id="orderDetail-@order.Id" tabindex="-1" aria-labelledby="orderDetailLabel-@order.Id" aria-hidden="true">
-                <div class="modal-dialog  modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                          
-                            <h5 class="modal-title" id="orderDetailLabel-@order.Id">Chi tiết đơn hàng: @order.Id</h5>
-                          
-                            <p class="mt-3 p-1 @(order.Status == "Chờ xác nhận" ? "non_accept" : "accept")"> @order.Status</p>
-                        </div>
-                        <div class="modal-body" >
-                            <div class="row" style="padding-right:4px;">
-                                <div class="col-lg-7">
-                                    <p><strong>Tên khách hàng:</strong> @order.Name</p>
-                                    <p><strong>Ngày tạo:</strong> @order.CreatedAt?.ToString("yyyy-MM-dd")</p>
-                                    <p><strong>Phương thức thanh toán:</strong> @order.PaymentMethod</p>
-                                    <p><strong>Lý do hủy:</strong> @(string.IsNullOrEmpty(order.CancellationReason) ? "N/A" : order.CancellationReason)</p>
-                                    <p><strong>Ghi chú:</strong> @(string.IsNullOrEmpty(order.Note) ? "Không có" : order.Note)</p>
-                                    <p><strong>Số điện thoại:</strong> @order.Phone</p>
-                                    <p><strong>Địa chỉ:</strong> @order.Address</p>
-                                </div >
-                                <div class="col-lg-5 " >
-                                    <h5>Chi tiết sản phẩm:</h5>
-                                    <div id="orderDetailsContent-@order.Id">
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <h5><strong>Tổng tiền:</strong> @order.TotalPrice.ToString("C0", new System.Globalization.CultureInfo("vi-VN"))</h5>
-
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        }
-
+        <div id="orderModalLayout"></div>
     </div>
 </main>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script>
-    function loadOrderDetails(orderId) {
-        // Lấy container hiển thị chi tiết đơn hàng
-        const detailsContainer = document.getElementById(`orderDetailsContent-${orderId}`);
-        detailsContainer.innerHTML = '<p>Đang tải.....</p>';
-        // Gửi yêu cầu AJAX đến action GetOrderDetails
-        $.get(`/Order/GetOrderDetails?orderId=${orderId}`, function (data) {
-            if (data && data.length > 0) {
-                let contentHtml = '<table class="table w-100 table-hover table-striped" >';
-                    contentHtml += `
-                                    <thead>
-                                        <tr>
-                                            <th>Sản phẩm</th>
-                                            <th>Số lượng</th>
-                                            <th>Giá</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>`;
-
-                data.forEach(item => {
-                    contentHtml += `
-                                    <tr>
-                                        <td id="product_name-${item.productId}"> </td>
-                                        <td>${item.quantity}</td>
-                                        <td>${item.price.toLocaleString('vi-VN')} đ</td>
-                                    </tr>`;
-                });
-                data.forEach(item => {
-                    getProductDetail(item.productId);
-                });
-                contentHtml += '</tbody></table>';
-                detailsContainer.innerHTML = contentHtml;
-            } else {
-                detailsContainer.innerHTML = '<p>Không tìm thấy chi tiết đơn hàng.</p>';
+    function openOrderModal(orderId, event) {
+        
+        $.ajax({
+            url: '/Order/OrderModal',
+            data: { orderId: orderId },
+            success: function (html) {
+                $('#orderModalLayout').html(html);
+                const modalElement = document.getElementById(`orderDetailModal`);
+                if (modalElement) {
+                    const existingInstance = bootstrap.Modal.getInstance(modalElement);
+                    if (existingInstance) {
+                        existingInstance.dispose();
+                    }
+                    const modalInstance = new bootstrap.Modal(modalElement);
+                    modalInstance.show();
+                } else {
+                    console.error('Không tìm thấy modal sau khi tải!');
+                }
+            },
+            error: function () {
+                alert('Không tải được modal order');
             }
-        }).fail(function () {
-            detailsContainer.innerHTML = '<p>Đã xảy ra lỗi khi tải dữ liệu.</p>';
         });
     }
   
-    function getProductDetail(productId,orderId) {
-        const productDetail = document.getElementById(`product_name-${orderId}-${productId}`);
-        if (productDetail) {
-            productDetail.innerHTML = '<p>Đang tải...</p>';
-            $.get(`/Order/GetProduct?productId=${productId}`, function (data) {
-                if (data) {
-                   
-                    productDetail.innerHTML = `<p>${data.name}</p>`;
-                } else {
-                    productDetail.innerHTML = '<p>Không tìm thấy sản phẩm.</p>';
-                }
-            }).fail(function () {
-                productDetail.innerHTML = '<p>Đã xảy ra lỗi khi tải dữ liệu.</p>';
-            });
-        }
-    }
     function confirmDelete(event) {
         const confirmed = confirm("Bạn có chắc chắn muốn xóa sản phẩm này không?");
         if (!confirmed) {

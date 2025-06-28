@@ -36,7 +36,7 @@ const Stories = () => {
                 <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
                     <div className="story-card bg-white rounded-lg shadow-md p-5">
                         <h3 className="text-xl font-semibold">
-                            Khởi Đầu SPhoneC
+                            Khởi Đầu GOSY
                         </h3>
                         <p className="mt-2 text-gray-600">
                             Từ ý tưởng về một cửa hàng thời trang uy tín năm
@@ -50,7 +50,7 @@ const Stories = () => {
                             Cam Kết Chất Lượng
                         </h3>
                         <p className="mt-2 text-gray-600">
-                            Mỗi sản phẩm tại SPhoneC đều được kiểm tra kỹ lưỡng
+                            Mỗi sản phẩm tại GOSY đều được kiểm tra kỹ lưỡng
                             và đảm bảo chính hãng. Chúng tôi tự hào về độ tin
                             cậy và sự hài lòng của khách hàng.
                         </p>

@@ -15,7 +15,6 @@ public class UserDTO
 
     public decimal? TotalBuy { get; set; }
 
-    public int? Account { get; set; }
     public DateTime? CreatedAt { get; set; }
 
    

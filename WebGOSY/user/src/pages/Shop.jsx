@@ -21,9 +21,9 @@ const Shop = () => {
     ]);
    
     const [tempSelectedColors, setTempSelectedColors] = useState([]);
-    const [tempPriceRange, setTempPriceRange] = useState([0, 20000000]);
+    const [tempPriceRange, setTempPriceRange] = useState([0, 5000000]);
 
-    const [maxPrice, setMaxPrice] = useState(20000000);
+    const [maxPrice, setMaxPrice] = useState(5000000);
     const [isCategoryOpen, setisCategoryOpen] = useState(false);
     const [isPriceOpen, setIsPriceOpen] = useState(false);
     const [isColorOpen, setIsColorOpen] = useState(false);
@@ -56,7 +56,7 @@ const Shop = () => {
                         Math.max(...response.data.map((item) => item.price)) /
                             1000
                     ) * 1000;
-                setMaxPrice(highestPrice);
+                setMaxPrice(highestPrice+500000);
                 setTempPriceRange([0, highestPrice]);
             } catch (error) {
                 console.error(error);

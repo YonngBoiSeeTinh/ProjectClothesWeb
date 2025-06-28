@@ -140,7 +140,7 @@ const Checkout = () => {
                         name: "Ưu đãi khách hàng bạc",
                         value: 7,
                         minPrice: 200000,
-                        maxValue: 2500000,
+                        maxValue: 200000,
                         code: "MEMBERVIP",
                     };
                 } else if (user?.role === 6) {
@@ -148,7 +148,7 @@ const Checkout = () => {
                         name: "Ưu đãi khách hàng vàng",
                         value: 10,
                         minPrice: 200000,
-                        maxValue: 3500000,
+                        maxValue: 350000,
                         code: "MEMBERVIP",
                     };
                 } else if (user?.role === 7) {
@@ -156,7 +156,7 @@ const Checkout = () => {
                         name: "Ưu đãi khách hàng kim cương",
                         value: 10,
                         minPrice: 200000,
-                        maxValue: 4500000,
+                        maxValue: 450000,
                         code: "MEMBERVIP",
                     };
                 }

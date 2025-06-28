@@ -35,14 +35,14 @@ const UserMenu = () => {
         {
             label: (
                 <span onClick={() => setIsRegisterModalVisible(true)}>
-                    Sign Up
+                   Đăng ký
                 </span>
             ),
             key: "0",
         },
         {
             label: (
-                <span onClick={() => setIsLoginModalVisible(true)}>Log In</span>
+                <span onClick={() => setIsLoginModalVisible(true)}>Đăng nhập</span>
             ),
             key: "1",
         },

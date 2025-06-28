@@ -1,4 +1,5 @@
-﻿using System.Net.Http;
+﻿using System.Collections.Generic;
+using System.Net.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
@@ -96,7 +97,34 @@ namespace AdminWebGosy.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetOrderDetails(int orderId)
+        public async Task<IActionResult> OrderModal(int orderId)
+        {
+            try
+            {
+                var response = await _httpClient.GetAsync($"{_httpClient.BaseAddress}/{orderId}");
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var order = await response.Content.ReadFromJsonAsync<Order>();
+                    var orderDetails = await GetOrderDetails(orderId);
+                    ViewBag.OrderDetailList = orderDetails;
+                    return PartialView("_orderModal", order);
+                }
+                else
+                {
+                    var errorMessage = await response.Content.ReadAsStringAsync();
+                    _logger.LogError("Failed to fetch order details for Order ID: {OrderId}. Error: {ErrorMessage}", orderId, errorMessage);
+                  
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while fetching order details for Order ID: {OrderId}", orderId);
+            }
+            return StatusCode(500);
+        }
+        [HttpGet]
+        public async Task<IEnumerable<OrderDetail>> GetOrderDetails(int orderId)
         {
             try
             {
@@ -105,47 +133,52 @@ namespace AdminWebGosy.Controllers
                 if (response.IsSuccessStatusCode)
                 {
                     var orderDetails = await response.Content.ReadFromJsonAsync<IEnumerable<OrderDetail>>();
-                    return Json(orderDetails);
+
+                    foreach (var item in orderDetails)
+                    {
+                        var pro = await GetProduct(item.ProductId);
+                        item.ProductName = pro.Name;
+                    }
+
+                    return orderDetails;
                 }
                 else
                 {
                     var errorMessage = await response.Content.ReadAsStringAsync();
                     _logger.LogError("Failed to fetch order details for Order ID: {OrderId}. Error: {ErrorMessage}", orderId, errorMessage);
-                    return StatusCode((int)response.StatusCode, "Unable to fetch order details.");
+                    return Enumerable.Empty<OrderDetail>(); // trả về danh sách rỗng thay vì lỗi
                 }
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "An error occurred while fetching order details for Order ID: {OrderId}", orderId);
-                return StatusCode(500, "An error occurred while processing the request.");
+                _logger.LogError(ex, "Exception occurred while fetching order details for Order ID: {OrderId}", orderId);
+                return Enumerable.Empty<OrderDetail>(); 
             }
         }
 
+
         [HttpGet]
-        public async Task<IActionResult> GetProduct(int productId)
+        public async Task<Product?> GetProduct(int? productId)
         {
             try
             {
                 var response = await _httpClient.GetAsync($"https://localhost:7192/api/Products/{productId}");
-
                 if (response.IsSuccessStatusCode)
                 {
-                    var product = await response.Content.ReadFromJsonAsync<Product>();
-                    return Json(product);
+                    return await response.Content.ReadFromJsonAsync<Product>();
                 }
-                else
-                {
-                    var errorMessage = await response.Content.ReadAsStringAsync();
-                    _logger.LogError("Failed to fetch product details for Product ID: {ProductId}. Error: {ErrorMessage}", productId, errorMessage);
-                    return StatusCode((int)response.StatusCode, "Unable to fetch product details.");
-                }
+
+                _logger.LogError("Failed to fetch product. Status: {Status}", response.StatusCode);
+                return null;
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "An error occurred while fetching product details for Product ID: {ProductId}", productId);
-                return StatusCode(500, "An error occurred while processing the request.");
+                _logger.LogError(ex, "Error fetching product.");
+                return null;
             }
         }
+
+
 
         [HttpPost]
         public async Task<IActionResult> DeleteOrder(int id)
