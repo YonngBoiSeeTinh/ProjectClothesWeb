@@ -25,6 +25,8 @@ public partial class Product : BaseEntity,IHasImage
 
     public int? Rate { get; set; }
 
+    public int? Banner { get; set; }
+
     public int? StarsRate { get; set; }
 
 }

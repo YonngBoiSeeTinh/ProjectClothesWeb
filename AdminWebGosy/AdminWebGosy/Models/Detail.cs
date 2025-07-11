@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace WebAPI.Models;
+namespace AdminWebGosy.Models;
 
 public partial class Detail : BaseEntity
 {

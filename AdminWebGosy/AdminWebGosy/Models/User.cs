@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace WebAPI.Models;
+namespace AdminWebGosy.Models;
 
     public partial class User : BaseEntity
 {

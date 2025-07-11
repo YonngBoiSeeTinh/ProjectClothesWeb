@@ -61,6 +61,7 @@ namespace WebAPI.Controllers
                     CategoryId = productDto.CategoryId,
                     Rate = productDto.Rate,
                     Sold = productDto.Sold,
+                    Banner = productDto.Banner,
                     Brand = productDto.Brand,
                     StarsRate = productDto.StarsRate,
                 };
@@ -98,6 +99,21 @@ namespace WebAPI.Controllers
                 return StatusCode(500, new { message = ex.Message });
             }
         }
+
+        [HttpPut("updateBanner/{id}")]
+        public async Task<IActionResult> UpdateBanner(int id, int isBanner)
+        {
+
+            try
+            {
+                await _ProductService.UpdateBanner(id, isBanner);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = ex.Message });
+            }
+        }
         // POST: api/Product
         [HttpPost]
         public async Task<ActionResult<Product>> PostProduct([FromForm] ProductDTO productDto, IFormFile? image)
@@ -114,6 +130,7 @@ namespace WebAPI.Controllers
                     Rate = productDto.Rate,
                     StarsRate = productDto.StarsRate,
                     Sold  = productDto.Sold,
+                    Banner = productDto.Banner,
                     Brand = productDto.Brand,
                     Promo = productDto.Promo,
                 };

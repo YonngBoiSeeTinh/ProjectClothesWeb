@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace WebAPI.Models;
+namespace AdminWebGosy.Models;
 
 public partial class Product : BaseEntity
 {
@@ -24,6 +24,8 @@ public partial class Product : BaseEntity
     public int? Sold { get; set; }
 
     public int? Rate { get; set; }
+
+    public int? Banner { get; set; }
 
     public int? StarsRate { get; set; }
 

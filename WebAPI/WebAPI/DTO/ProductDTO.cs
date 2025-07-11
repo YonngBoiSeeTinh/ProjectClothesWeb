@@ -11,6 +11,8 @@
         public int Sold { get; set; }
         public string Brand { get; set; }
         public int Promo { get; set; }
+
+        public int Banner { get; set; }
         public int? StarsRate { get; set; }
 
         public DateTime? CreatedAt { get; set; }

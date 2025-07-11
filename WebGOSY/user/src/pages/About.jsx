@@ -1,17 +1,35 @@
-import React, { useEffect } from 'react';
-// Import các ảnh avatar
-import Avatar1 from '../assets/avatar/a1.jpg';
-import Avatar2 from '../assets/avatar/a2.jpg';
-import Avatar3 from '../assets/avatar/a3.jpg';
-import Avatar4 from '../assets/avatar/a4.jpg';
-import Avatar5 from '../assets/avatar/a5.jpg';
-
+import React from 'react';
+import { useEffect, useState } from "react";
+import { API_URL } from "../config.js";
+import axios from "axios";
 const About = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
-
+        const [post, setPosts] = useState([]);
+        const [story, setStory] = useState([]);
+        const [values, setValues] = useState([]);
+        useEffect(() => {
+            const fetchPosts = async () => {
+                try {
+                    const response = await axios.get(`${API_URL}/api/Posts`);
+                    console.log(response.data);
+                    setPosts(response.data);
+                } catch (error) {
+                    console.error("Lỗi khi tải posts:", error);
+                }
+            };
+           
+            fetchPosts();
+            
+        }, []);
+         useEffect(()=>{
+            setStory(post.find(p=>p.type == "Câu chuyện"))
+            setValues(post.filter(p=>p.type == "Giá trị cốt lõi"))
+           
+        },[post])
     return (
+        
         <main className="about-page">
            <section className="hero-section h-96 flex items-center justify-center text-center text-white" style={{ background: "linear-gradient(to bottom, rgba(30, 58, 138, 0.8), rgba(30, 58, 138, 0.8)), url('/path-to-your-background-image.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
                 <div className="bg-black bg-opacity-70 p-10 rounded-lg shadow-lg">
@@ -20,11 +38,11 @@ const About = () => {
                 </div>
             </section>
 
-            {/* Tổng quan về công ty */}
+         
             <section className="company-overview py-16 px-8 text-center bg-white">
-                <h2 className="text-4xl font-bold mb-4">Câu Chuyện Của Chúng Tôi</h2>
+                <h2 className="text-4xl font-bold mb-4">{story?.title}</h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                    Kể từ khi thành lập vào năm 2020, chúng tôi đã và đang nỗ lực không ngừng để mang đến những giải pháp sáng tạo và dịch vụ xuất sắc cho khách hàng trên toàn quốc. Chúng tôi tin tưởng vào chất lượng, sự chính trực và cam kết.
+                   { story?.content}
                 </p>
             </section>
 
@@ -32,18 +50,13 @@ const About = () => {
             <section className="values-section bg-gray-100 py-16 px-8 text-center">
                 <h2 className="text-4xl font-bold mb-8">Giá Trị Cốt Lõi</h2>
                 <div className="grid md:grid-cols-3 gap-8">
-                    <div className="value-item p-6 bg-white rounded shadow-md">
-                        <h3 className="text-2xl font-semibold">Đổi Mới</h3>
-                        <p className="text-gray-600 mt-4">Chúng tôi luôn nỗ lực để đi đầu trong công nghệ, không ngừng cải tiến và phát triển.</p>
-                    </div>
-                    <div className="value-item p-6 bg-white rounded shadow-md">
-                        <h3 className="text-2xl font-semibold">Khách Hàng Là Trọng Tâm</h3>
-                        <p className="text-gray-600 mt-4">Khách hàng là ưu tiên hàng đầu. Chúng tôi lắng nghe và đáp ứng nhu cầu của họ.</p>
-                    </div>
-                    <div className="value-item p-6 bg-white rounded shadow-md">
-                        <h3 className="text-2xl font-semibold">Chính Trực</h3>
-                        <p className="text-gray-600 mt-4">Chúng tôi điều hành doanh nghiệp với sự trung thực và minh bạch.</p>
-                    </div>
+                    {values.map((item)=>(
+                        <div className="value-item p-6 bg-white rounded shadow-md">
+                            <h3 className="text-2xl font-semibold">{item.title}</h3>
+                            <p className="text-gray-600 mt-4">{item?.content}</p>
+                        </div>
+                    ))}
+                   
                 </div>
             </section>
 

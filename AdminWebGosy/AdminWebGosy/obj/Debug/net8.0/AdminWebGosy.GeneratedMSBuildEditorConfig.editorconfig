@@ -64,6 +64,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcX29yZGVyTW9kYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/GOSY_ECOMER-Web/AdminWebGosy/AdminWebGosy/Views/Post/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GOSY_ECOMER-Web/AdminWebGosy/AdminWebGosy/Views/Post/_EditPostModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxfRWRpdFBvc3RNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/GOSY_ECOMER-Web/AdminWebGosy/AdminWebGosy/Views/Product/ProductList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxQcm9kdWN0TGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

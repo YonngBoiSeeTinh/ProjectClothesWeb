@@ -1,7 +1,7 @@
 ﻿using System.Net.Http;
 using System.Net.Http.Headers;
 using Microsoft.AspNetCore.Mvc;
-using WebAPI.Models;
+using AdminWebGosy.Models;
 
 namespace AdminWebGosy.Controllers
 {

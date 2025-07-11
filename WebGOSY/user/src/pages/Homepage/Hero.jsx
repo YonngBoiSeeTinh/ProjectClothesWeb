@@ -25,10 +25,8 @@ const Hero = () => {
         fetchProducts();
     }, []);
 
-    const getProductsById = (ids) => {
-        return products.filter((product) => ids.includes(product.id));
-    };
-    const heroProducts = getProductsById([3,4]);
+  
+    const heroProducts = products.filter((product) => product.banner == 1)
 
     const handleHeroClick = (productId) => {
         navigate(`${PathNames.PRODUCT_DETAILS}/${productId}`);

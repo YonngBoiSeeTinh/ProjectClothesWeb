@@ -65,6 +65,19 @@ namespace WebAPI.Services
             _context.Users.Update(user);
             await _context.SaveChangesAsync();
         }
+        public async Task<int> getNewRegister()
+        {
+            var now = DateTime.Now.Date;
 
+           
+           return await _context.Users
+            .Where(o => o.CreatedAt.HasValue &&
+                        o.CreatedAt.Value.Month == now.Month &&
+                        o.CreatedAt.Value.Year == now.Year)
+            .CountAsync();
+
+
+
+        }
     }
 }

@@ -3,7 +3,7 @@ using System.Net.Http.Headers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using WebAPI.Models;
+using AdminWebGosy.Models;
 
 namespace AdminWebGosy.Controllers
 {
@@ -20,19 +20,20 @@ namespace AdminWebGosy.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddProduct(Product productt, IFormFile? image)
+        public async Task<IActionResult> AddProduct(Product product, IFormFile? image)
         {
             try
             {
                 using var formData = new MultipartFormDataContent();
-                formData.Add(new StringContent(productt.Name), "Name");
+                formData.Add(new StringContent(product.Name), "Name");
                 formData.Add(new StringContent("GOSY"), "Brand");
                 formData.Add(new StringContent("0"), "StarsRate");
                 formData.Add(new StringContent("0"), "Promo");
-                formData.Add(new StringContent(productt.Description ?? ""), "Description");
-                formData.Add(new StringContent(productt.Price.ToString()), "Price");
-                formData.Add(new StringContent(productt.Unit), "Unit");
-                formData.Add(new StringContent(productt.CategoryId.ToString()), "CategoryId");
+                formData.Add(new StringContent("0"), "Banner");
+                formData.Add(new StringContent(product.Description ?? ""), "Description");
+                formData.Add(new StringContent(product.Price.ToString()), "Price");
+                formData.Add(new StringContent(product.Unit), "Unit");
+                formData.Add(new StringContent(product.CategoryId.ToString()), "CategoryId");
 
                 if (image != null && image.Length > 0)
                 {
@@ -65,27 +66,28 @@ namespace AdminWebGosy.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> UpdateProduct(int id, Product productt, IFormFile? image)
+        public async Task<IActionResult> UpdateProduct(int id, Product product, IFormFile? image)
         {
             try
             {
                 using var formData = new MultipartFormDataContent();
-                formData.Add(new StringContent(productt.Name ?? ""), "Name");
-                formData.Add(new StringContent(productt.Brand ?? ""), "Brand");
+                formData.Add(new StringContent(product.Name ?? ""), "Name");
+                formData.Add(new StringContent(product.Brand ?? ""), "Brand");
 
-                if (productt.CreatedAt != null)
+                if (product.CreatedAt != null)
                 {
-                    formData.Add(new StringContent(productt.CreatedAt.Value.ToString("o")), "CreatedAt");
+                    formData.Add(new StringContent(product.CreatedAt.Value.ToString("o")), "CreatedAt");
                 }
 
-                formData.Add(new StringContent(productt.StarsRate.ToString()), "StarsRate");
-                formData.Add(new StringContent(productt.Rate.ToString()), "Rate");
-                formData.Add(new StringContent(productt.Sold.ToString()), "Sold");
-                formData.Add(new StringContent(productt.Promo.ToString()), "Promo");
-                formData.Add(new StringContent(productt.Description ?? ""), "Description");
-                formData.Add(new StringContent(productt.Price.ToString()), "Price");
-                formData.Add(new StringContent(productt.Unit ?? ""), "Unit");
-                formData.Add(new StringContent(productt.CategoryId.ToString()), "CategoryId");
+                formData.Add(new StringContent(product.StarsRate.ToString()), "StarsRate");
+                formData.Add(new StringContent(product.Rate.ToString()), "Rate");
+                formData.Add(new StringContent(product.Sold.ToString()), "Sold");
+                formData.Add(new StringContent(product.Promo.ToString()), "Promo");
+                formData.Add(new StringContent(product.Description ?? ""), "Description");
+                formData.Add(new StringContent(product.Banner.ToString()), "Banner");
+                formData.Add(new StringContent(product.Price.ToString()), "Price");
+                formData.Add(new StringContent(product.Unit ?? ""), "Unit");
+                formData.Add(new StringContent(product.CategoryId.ToString()), "CategoryId");
 
                 if (image != null && image.Length > 0)
                 {
@@ -109,6 +111,29 @@ namespace AdminWebGosy.Controllers
             {
                 _logger.LogError(ex, "Error occurred in UpdateProduct");
                 TempData["ApiLog"] = $"Error: {ex.Message}";
+            }
+
+            return RedirectToAction("ProductList");
+        }
+        [HttpPost]
+        public async Task<IActionResult> UpdateBanner(int id,int isBanner)
+        {
+            try
+            {
+                var response = await _httpClient.PutAsync($"{_httpClient.BaseAddress}/updateBanner/{id}?isBanner={isBanner}",null);
+                var responseContent = await response.Content.ReadAsStringAsync();
+                _logger.LogInformation("API Response: {StatusCode}, Content: {ResponseContent}", response.StatusCode, responseContent);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("ProductList");
+                }
+                    
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error occurred in UpdateProduct");
+             
             }
 
             return RedirectToAction("ProductList");

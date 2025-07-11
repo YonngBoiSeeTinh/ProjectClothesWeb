@@ -3,7 +3,7 @@ using System.Net.Http.Headers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using WebAPI.Models;
+using AdminWebGosy.Models;
 
 namespace AdminWebGosy.Controllers
 {

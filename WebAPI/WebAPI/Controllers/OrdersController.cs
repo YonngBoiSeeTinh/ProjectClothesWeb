@@ -28,6 +28,16 @@ namespace WebAPI.Controllers
             return Ok(await _OrderRepository.GetAllAsync());
         }
 
+        [HttpGet("getRevenue")]
+        public async Task<IActionResult> GetRevenue()
+        {
+            return Ok(await _OrderService.getRevenue());
+        }
+        [HttpGet("getDataChart")]
+        public async Task<IActionResult> DataChart()
+        {
+            return Ok(await _OrderService.getDataChart());
+        }
         // GET: api/Orders/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Order>> GetOrder(int id)

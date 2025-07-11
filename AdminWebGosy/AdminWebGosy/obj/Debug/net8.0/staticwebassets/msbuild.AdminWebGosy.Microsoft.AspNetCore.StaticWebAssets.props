@@ -642,8 +642,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>3ti8pkgn20</Fingerprint>
-      <Integrity>yaVp5994VNGLTmr+rHl//lK/xEEk6/48+aDkECjDt5M=</Integrity>
+      <Fingerprint>qpktp13va8</Fingerprint>
+      <Integrity>Hluh5ny6STMlUwcx03h9GJL/0o83jonjM2rH70XDIzs=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\adminlte.css'))</OriginalItemSpec>

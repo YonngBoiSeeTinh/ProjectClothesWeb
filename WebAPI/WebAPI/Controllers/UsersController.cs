@@ -30,6 +30,12 @@ namespace WebAPI.Controllers
             return Ok(await _UserRepository.GetAllAsync());
         }
 
+        [HttpGet("getNew")]
+        public async Task<ActionResult<int>>getNewRegister()
+        {
+            return Ok(await _UserService.getNewRegister());
+        }
+
         // GET: api/Users/5
         [HttpGet("{id}")]
         public async Task<ActionResult<User>> GetUser(int id)

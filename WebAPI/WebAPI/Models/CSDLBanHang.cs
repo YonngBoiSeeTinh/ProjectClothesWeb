@@ -28,6 +28,7 @@ public partial class CSDLBanHang : DbContext
     public virtual DbSet<Order> Orders { get; set; }
 
     public virtual DbSet<OrderDetail> OrderDetails { get; set; }
+    public virtual DbSet<Post> Posts { get; set; }
 
     public virtual DbSet<Product> Products { get; set; }
 
@@ -271,6 +272,8 @@ public partial class CSDLBanHang : DbContext
                 .HasColumnName("price");
             entity.Property(e => e.Promo)
                 .HasColumnName("promo");
+            entity.Property(e => e.Banner)
+                .HasColumnName("banner");
             entity.Property(e => e.Rate)
                 .HasDefaultValue(0)
                 .HasColumnName("rate");
@@ -282,6 +285,28 @@ public partial class CSDLBanHang : DbContext
             entity.Property(e => e.Unit)
                 .HasMaxLength(50)
                 .HasColumnName("unit");
+            entity.Property(e => e.UpdatedAt)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime")
+                .HasColumnName("updated_at");
+
+
+        });
+        modelBuilder.Entity<Post>(entity =>
+        {
+            entity.ToTable("Posts");
+            entity.HasKey(e => e.Id).HasName("PK__Post__3213E83FB707A7B4");
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime")
+                .HasColumnName("created_at");
+            entity.Property(e => e.Image).HasColumnName("image");
+            entity.Property(e => e.Type).HasColumnName("type");
+            entity.Property(e => e.Question).HasColumnName("question");
+             entity.Property(e => e.Title).HasColumnName("title");
+            entity.Property(e => e.Content).HasColumnName("content");
+            entity.Property(e => e.Authur).HasColumnName("author");
             entity.Property(e => e.UpdatedAt)
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime")

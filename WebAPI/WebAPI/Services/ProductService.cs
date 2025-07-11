@@ -59,6 +59,18 @@ namespace WebAPI.Services
             await _context.SaveChangesAsync();
         }
 
+        public async Task UpdateBanner (int productId, int isBanner)
+        {
+            var product = await _context.Products.FindAsync(productId);
+            if (product == null)
+            {
+                throw new Exception($"Product với Id {productId} không tồn tại.");
+            }
+            product.Banner = isBanner;
+            _context.Products.Update(product);
+            await _context.SaveChangesAsync();
+        }
+
     }
 
 }

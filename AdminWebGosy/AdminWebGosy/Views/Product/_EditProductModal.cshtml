@@ -1,4 +1,4 @@
-﻿@using WebAPI.Models
+﻿@using AdminWebGosy.Models
 @model Product
 
 
@@ -10,6 +10,7 @@
           style="background-color: white; margin:auto;">
         <input type="hidden" name="_method" value="PUT" />
         <input type="hidden" name="Id" value="@Model.Id" />
+        <input type="hidden" name="Banner" value="@Model.Banner" />
         <input type="hidden" name="CreatedAt" value="@Model.CreatedAt" />
         <input type="hidden" name="Brand" value="@Model.Brand" />
         <input type="hidden" name="Sold" value="@Model.Sold" />

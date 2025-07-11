@@ -128,3 +128,16 @@ CREATE TABLE [User] (
     total_buy DECIMAL(18, 2) DEFAULT 0,
     updated_at DATETIME DEFAULT GETDATE(),
    );
+
+
+DROP TABLE [dbo].[Posts](
+	[id] [int] IDENTITY(1,1) NOT NULL Primary key,
+	[type] [nvarchar](50) NULL,
+	[image] [varbinary](max) NULL,
+	[question] [nvarchar](max) NULL,
+	[content] [nvarchar](max) NULL,
+	[author] [nvarchar](50) NULL,
+	title [nvarchar](100) NULL,
+	[created_at] [datetime] DEFAULT GETDATE(),
+	[updated_at] [datetime] DEFAULT GETDATE(),
+)

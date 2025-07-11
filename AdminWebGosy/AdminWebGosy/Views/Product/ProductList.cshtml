@@ -1,4 +1,4 @@
-﻿@using WebAPI.Models
+﻿@using AdminWebGosy.Models
 @model IEnumerable<Product>
 @{
     ViewData["Title"] = "Product Page";
@@ -14,7 +14,7 @@
         <div class="d-flex justify-content-between align-items-center mb-3">
             <h1 class="h4">Quản lý sản phẩm</h1>
             <button class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#addProductModal">
-                <i class="fas fa-plus"></i> Add New Product
+                <i class="fas fa-plus"></i> Thêm sản phẩm mới
             </button>
         </div>
 
@@ -27,7 +27,8 @@
                         <th scope="col">Mô tả</th>
                         <th scope="col">Đã bán</th>
                         <th scope="col">Giá bán</th>
-                        <th scope="col">Actions</th>
+                        <th scope="col">Banner</th>
+                        <th scope="col">Hành động</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -46,10 +47,29 @@
                             <td>@product.Sold</td>
                             <td>@product.Price.ToString("C0", new System.Globalization.CultureInfo("vi-VN"))</td>
                             <td>
+                                <form method="post" asp-action="UpdateBanner" asp-controller="Product">
+                                    <input type="hidden" name="id" value="@product.Id" />
+
+                                    <label>
+                                        <input type="radio" name="isBanner" value="1"
+                                        @(product.Banner == 1 ? "checked" : "")
+                                               onchange="this.form.submit()" /> Có
+                                    </label>
+
+                                    <label>
+                                        <input type="radio" name="isBanner" value="0"
+                                        @(product.Banner == 0 ? "checked" : "")
+                                               onchange="this.form.submit()" /> Không
+                                    </label>
+                                </form>
+
+                            </td>
+                            <td>
                                 <button class="btn btn-sm btn-gray" onclick='openEditProductModal(@product.Id);'>
                                     <i class="fas fa-edit"></i>
                                 </button>
 
+                                
 
                                 <div id="editProductModalLayout"></div>
 
@@ -86,10 +106,7 @@
                                         <label for="productName" class="form-label">Tên sản phẩm</label>
                                         <input type="text" class="form-control" id="productName" name="Name" required>
                                     </div>
-                                    <div class="mb-3">
-                                        <label for="productBrand" class="form-label">Thương hiệu</label>
-                                        <input type="text" class="form-control" id="productBrand" name="Brand" required>
-                                    </div>
+                                  
                                     <div class="mb-3">
                                         <label for="editProductDescription" class="form-label">Danh mục</label>
                                         <select class="form-control" id="editProductCategory" name="CategoryId" required>
@@ -174,6 +191,7 @@
     }
 
 </script>
+
 
 <script>
     function openEditProductModal(productId) {

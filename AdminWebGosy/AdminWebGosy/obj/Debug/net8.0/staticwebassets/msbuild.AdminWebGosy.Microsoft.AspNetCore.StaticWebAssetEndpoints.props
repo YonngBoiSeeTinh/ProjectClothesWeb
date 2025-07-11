@@ -420,17 +420,11 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ki1y5lpl0h"},{"Name":"integrity","Value":"sha256-LKW/qtgV\u002BG43CJcftvSsrK2jiFlbRgvA7\u002Bdea6qKiZE="},{"Name":"label","Value":"_content/AdminWebGosy/assets/img/user8-128x128.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4983"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022LKW/qtgV\u002BG43CJcftvSsrK2jiFlbRgvA7\u002Bdea6qKiZE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 29 May 2025 20:41:42 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/AdminWebGosy/css/adminlte.3ti8pkgn20.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\adminlte.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3ti8pkgn20"},{"Name":"integrity","Value":"sha256-yaVp5994VNGLTmr\u002BrHl//lK/xEEk6/48\u002BaDkECjDt5M="},{"Name":"label","Value":"_content/AdminWebGosy/css/adminlte.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"358903"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022yaVp5994VNGLTmr\u002BrHl//lK/xEEk6/48\u002BaDkECjDt5M=\u0022"},{"Name":"Last-Modified","Value":"Fri, 06 Jun 2025 13:50:32 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AdminWebGosy/css/adminlte.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\adminlte.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-yaVp5994VNGLTmr\u002BrHl//lK/xEEk6/48\u002BaDkECjDt5M="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"358903"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022yaVp5994VNGLTmr\u002BrHl//lK/xEEk6/48\u002BaDkECjDt5M=\u0022"},{"Name":"Last-Modified","Value":"Fri, 06 Jun 2025 13:50:32 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Hluh5ny6STMlUwcx03h9GJL/0o83jonjM2rH70XDIzs="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"358872"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Hluh5ny6STMlUwcx03h9GJL/0o83jonjM2rH70XDIzs=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Jul 2025 12:16:31 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AdminWebGosy/css/adminlte.css.3zpwalpuda.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\adminlte.css.map'))</AssetFile>
@@ -467,6 +461,12 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"gjrdkc01zn"},{"Name":"integrity","Value":"sha256-VK8oa80ned6o3m8wabYIfqc66Mvtgj64eZ4SWSZw/MA="},{"Name":"label","Value":"_content/AdminWebGosy/css/adminlte.min.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"297158"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022VK8oa80ned6o3m8wabYIfqc66Mvtgj64eZ4SWSZw/MA=\u0022"},{"Name":"Last-Modified","Value":"Thu, 29 May 2025 20:41:43 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AdminWebGosy/css/adminlte.qpktp13va8.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\adminlte.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qpktp13va8"},{"Name":"integrity","Value":"sha256-Hluh5ny6STMlUwcx03h9GJL/0o83jonjM2rH70XDIzs="},{"Name":"label","Value":"_content/AdminWebGosy/css/adminlte.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"358872"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Hluh5ny6STMlUwcx03h9GJL/0o83jonjM2rH70XDIzs=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Jul 2025 12:16:31 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AdminWebGosy/css/adminlte.rtl.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\adminlte.rtl.css'))</AssetFile>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FEbojZGGPNoZ5xnvWduwtUiLzAjN/y/RymhxBJpePF0=",
+  "Hash": "7ot2O9yXUkZnVf7xBWQAURfqnEeZYOPwp9yPsd+FwAQ=",
   "Source": "AdminWebGosy",
   "BasePath": "_content/AdminWebGosy",
   "Mode": "Default",
@@ -787,8 +787,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "3ti8pkgn20",
-      "Integrity": "yaVp5994VNGLTmr+rHl//lK/xEEk6/48+aDkECjDt5M=",
+      "Fingerprint": "qpktp13va8",
+      "Integrity": "Hluh5ny6STMlUwcx03h9GJL/0o83jonjM2rH70XDIzs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\adminlte.css"
@@ -5260,51 +5260,6 @@
       ]
     },
     {
-      "Route": "css/adminlte.3ti8pkgn20.css",
-      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "358903"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"yaVp5994VNGLTmr+rHl//lK/xEEk6/48+aDkECjDt5M=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 06 Jun 2025 13:50:32 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "3ti8pkgn20"
-        },
-        {
-          "Name": "label",
-          "Value": "css/adminlte.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-yaVp5994VNGLTmr+rHl//lK/xEEk6/48+aDkECjDt5M="
-        }
-      ]
-    },
-    {
       "Route": "css/adminlte.css",
       "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.css",
       "Selectors": [],
@@ -5315,7 +5270,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "358903"
+          "Value": "358872"
         },
         {
           "Name": "Content-Type",
@@ -5323,11 +5278,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"yaVp5994VNGLTmr+rHl//lK/xEEk6/48+aDkECjDt5M=\""
+          "Value": "\"Hluh5ny6STMlUwcx03h9GJL/0o83jonjM2rH70XDIzs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 06 Jun 2025 13:50:32 GMT"
+          "Value": "Fri, 11 Jul 2025 12:16:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5337,7 +5292,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-yaVp5994VNGLTmr+rHl//lK/xEEk6/48+aDkECjDt5M="
+          "Value": "sha256-Hluh5ny6STMlUwcx03h9GJL/0o83jonjM2rH70XDIzs="
         }
       ]
     },
@@ -5584,6 +5539,51 @@
         {
           "Name": "integrity",
           "Value": "sha256-VK8oa80ned6o3m8wabYIfqc66Mvtgj64eZ4SWSZw/MA="
+        }
+      ]
+    },
+    {
+      "Route": "css/adminlte.qpktp13va8.css",
+      "AssetFile": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\wwwroot\\css\\adminlte.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "358872"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Hluh5ny6STMlUwcx03h9GJL/0o83jonjM2rH70XDIzs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Jul 2025 12:16:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qpktp13va8"
+        },
+        {
+          "Name": "label",
+          "Value": "css/adminlte.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Hluh5ny6STMlUwcx03h9GJL/0o83jonjM2rH70XDIzs="
         }
       ]
     },

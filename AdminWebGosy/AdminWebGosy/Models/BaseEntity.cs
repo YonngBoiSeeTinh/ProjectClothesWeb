@@ -1,4 +1,4 @@
-﻿namespace WebAPI.Models
+﻿namespace AdminWebGosy.Models
 {
     public abstract class BaseEntity
     {

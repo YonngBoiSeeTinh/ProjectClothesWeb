@@ -1,7 +1,7 @@
 ﻿using System.Net.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using WebAPI.Models;
+using AdminWebGosy.Models;
 
 namespace AdminWebGosy.Controllers
 {
@@ -24,14 +24,14 @@ namespace AdminWebGosy.Controllers
                 if (response.IsSuccessStatusCode)
                 {
                     var colorSizes = await response.Content.ReadFromJsonAsync<IEnumerable<ColorSize>>();
-                    TempData["ApiLog"] = $"{response.StatusCode}";
+                   
                     return PartialView("_Index",colorSizes);
                 }
 
             }
             catch (Exception ex)
             {
-                TempData["ApiLog"] = $"Đã xảy ra lỗi: {ex.Message}";
+                _logger.LogError("Lỗi : {Error}", ex);
             }
 
             return PartialView("_Index",new List<ColorSize>());
@@ -45,14 +45,14 @@ namespace AdminWebGosy.Controllers
                 if (response.IsSuccessStatusCode)
                 {
                     var colorSizes = await response.Content.ReadFromJsonAsync<ColorSize>();
-                    TempData["ApiLog"] = $"{response.StatusCode}";
+                  
                     return PartialView("_EditColorModal", colorSizes);
                 }
 
             }
             catch (Exception ex)
             {
-                TempData["ApiLog"] = $"Đã xảy ra lỗi: {ex.Message}";
+                _logger.LogError("Lỗi : {Error}", ex);
             }
 
             return PartialView("_EditColorModal", new ColorSize());

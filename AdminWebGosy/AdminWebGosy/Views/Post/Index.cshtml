@@ -1,0 +1,201 @@
+﻿@using AdminWebGosy.Models
+@model IEnumerable<Post>
+@{
+    ViewData["Title"] = "Posts Page";
+}
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<main class="app-main mt-4">
+    <div class="app-content">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h1 class="h4">Quản lý bài viết</h1>
+            <button class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#addPostModal">
+                <i class="fas fa-plus"></i> Thêm bài viết
+            </button>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-hover table-striped">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Loại bài viết</th>
+                        <th scope="col">Tiêu đề</th>
+                        <th scope="col">Nội dung</th>
+                        <th scope="col">Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var post in Model)
+                    {
+                        <tr>
+                          
+                            <td>@post.Type</td>
+                            <td>@post.Title</td>
+                            <td>
+                                @(post.Content?.Length > 100
+                                    ? post.Content.Substring(0, 100) + "..."
+                                    : post.Content)
+                            </td>
+
+                         
+                            <td>
+                                <button class="btn btn-sm btn-gray" onclick='openEditPostModal(@post.Id);'>
+                                    <i class="fas fa-edit"></i>
+                                </button>
+
+                              
+
+
+                                <form asp-action="DeletePost" method="post" class="d-inline" onsubmit="return confirmDelete(event)">
+                                    <input type="hidden" name="id" value="@post.Id" />
+                                    <button type="submit" class="btn btn-sm btn-danger">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </form>
+
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div id="editPostModalLayout"></div>
+        @*Add post form*@
+
+        <div class="modal fade" id="addPostModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <form asp-action="AddPost" asp-controller="Post" method="post" enctype="multipart/form-data">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="addProductModalLabel">Thêm bài viết</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                   <div class="mb-3">
+                                        <label for="productType" class="form-label">Loại bài viết</label>
+                                        <input list="typeOptions" class="form-control" name="Type"  required>
+                                        <datalist id="typeOptions">
+                                            <option value="Tin tức">Tin tức</option>
+                                            <option value="Về chúng tôi ">Về chúng tôi </option>
+                                            <option value="Giá trị cốt lõi">Giá trị cốt lõi</option>
+                                            <option value="Câu hỏi">Câu hỏi thường gặp</option>
+                                            <option value="Điều khoản">Điều khoản</option>
+                                        </datalist>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="productUnit" class="form-label">Tiêu đề</label>
+                                        <input type="text" class="form-control" name="Title">
+                                    </div>
+                                   
+
+                                    <div class="mb-3">
+                                        <label for="productUnit" class="form-label">Tác giả (Có hoặc không)</label>
+                                        <input type="text" class="form-control" name="Authur">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="productImage" class="form-label">Hình ảnh</label>
+                                        <input type="file" class="form-control mb-3" id="productImage" name="image" onchange="previewImage(this, 'previewImage-add')">
+                                        <div class="d-flex justify-content-center" style="height:160px; width:160px;margin-left:20px; border:1px solid #ccc;background: #ccc; border-radius:5px;">
+                                            <img id="previewImage-add" class="img-fluid" style="height:160px; width:160px; border-radius:5px;" />
+                                        </div>
+                                    </div>
+                                   
+
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="productDescription" class="form-label">Nội dung</label>
+                                <textarea class="form-control" id="productDescription" name="Content" rows="3"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                            <button type="submit" class="btn btn-primary">Thêm bài viết</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+@if (TempData["ApiLog"] != null)
+{
+    <script>
+        console.log("API Log: @TempData["ApiLog"]");
+    </script>
+}
+
+<script>
+    function previewImage(input, previewImageId) {
+        if (input.files && input.files[0]) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                const previewImage = document.getElementById(previewImageId);
+                if (previewImage) {
+                    previewImage.src = e.target.result;
+                } else {
+                    console.error(`Không tìm thấy thẻ img với id ${previewImageId}`);
+                }
+            };
+            reader.readAsDataURL(input.files[0]);
+        } else {
+            console.error("Không có file nào được chọn!");
+        }
+    }
+
+    function confirmDelete(event) {
+        const confirmed = confirm("Bạn có chắc chắn muốn xóa bài viết này không?");
+        if (!confirmed) {
+            event.preventDefault();
+        }
+        return confirmed;
+    }
+
+</script>
+
+
+<script>
+    function openEditPostModal(id, event) {
+        if (event) event.preventDefault();
+
+        $.ajax({
+            url: '/Post/EditPostModal',
+            data: { postId: id },
+            success: function (html) {
+                $('#editPostModalLayout').html(html);
+                const modalElement = document.getElementById(`editPostModal`);
+                if (modalElement) {
+                    const existingInstance = bootstrap.Modal.getInstance(modalElement);
+                    if (existingInstance) {
+                        existingInstance.dispose();
+                    }
+                    const modalInstance = new bootstrap.Modal(modalElement);
+                    modalInstance.show();
+                } else {
+                    console.error('Không tìm thấy modal sau khi tải!');
+                }
+            },
+            error: function () {
+                alert('Không tải được modal chỉnh danh muc');
+            }
+        });
+    }
+
+</script>
