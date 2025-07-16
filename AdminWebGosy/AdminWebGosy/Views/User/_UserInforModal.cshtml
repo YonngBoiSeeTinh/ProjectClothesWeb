@@ -1,0 +1,52 @@
+﻿@using AdminWebGosy.Models
+@model User
+
+<div class="modal fade" id="userInfoModal" tabindex="-1" aria-labelledby="userInfoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content  p-4">
+
+            <div class="d-flex align-content-center justify-content-between">
+                <h5 class="modal-title" id="userInfoModalLabel">Thông tin người dùng</h5>
+                @{
+                    string borderClass = Model.Role switch
+                    {
+                        5 => "border border-secondary",       // bạc 
+                        6 => "border border-warning",         // vàng
+                        7 => "border border-primary",         // xanh dương
+                        _ => "border border-gray"
+                    };
+                }
+                <p class=" @borderClass rounded p-1 "><strong>Hạng:</strong> @Model.RoleName</p>
+            </div>
+
+            <div class="modal-body">
+                @if (Model != null)
+                {
+                    <div class="row">
+                        <div class="col-7 my-2">
+
+                            <p><strong>Họ tên:</strong> @Model.Name</p>
+                            <p><strong>Số điện thoại:</strong> @Model.Phone</p>
+                            <p><strong>Địa chỉ:</strong> @Model.Address</p>
+                             <p><strong>Tổng chi tiêu:</strong> @String.Format("{0:N0} VNĐ", Model.TotalBuy ?? 0)</p>
+                         </div>
+
+                        <div class="text-center mb-3 col-4">
+                            <img src="data:image/png;base64,@Model.Image" alt="Ảnh nhân viên" class="img-thumbnail" style="width: 120px; height: 120px;" />
+                        </div>
+                  
+                    </div>
+                }
+                else
+                {
+                    <p class="text-danger">Không tìm thấy thông tin nhân viên.</p>
+                }
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+            </div>
+
+        </div>
+    </div>
+</div>

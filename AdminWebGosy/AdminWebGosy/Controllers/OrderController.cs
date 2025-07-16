@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using AdminWebGosy.Models;
+using Microsoft.Extensions.Options;
 
 namespace AdminWebGosy.Controllers
 {
@@ -12,10 +13,10 @@ namespace AdminWebGosy.Controllers
         private readonly HttpClient _httpClient;
         private readonly ILogger<OrderController> _logger;
 
-        public OrderController(HttpClient httpClient, ILogger<OrderController> logger)
+        public OrderController(HttpClient httpClient, ILogger<OrderController> logger , IOptions<ApiSettings> apiSettings)
         {
             _httpClient = httpClient;
-            _httpClient.BaseAddress = new Uri("https://localhost:7192/api/Orders");
+            _httpClient.BaseAddress = new Uri(apiSettings.Value.BaseUrl);
             _logger = logger;
         }
 
@@ -23,7 +24,7 @@ namespace AdminWebGosy.Controllers
         {
             try
             {
-                var response = await _httpClient.GetAsync("");
+                var response = await _httpClient.GetAsync($"{_httpClient.BaseAddress}/Orders");
                 if (response.IsSuccessStatusCode)
                 {
                     var orders = await response.Content.ReadFromJsonAsync<IEnumerable<Order>>();
@@ -64,12 +65,12 @@ namespace AdminWebGosy.Controllers
                     "application/json"
                 );
 
-                var response = await _httpClient.PutAsync($"https://localhost:7192/api/Orders/{id}", content);
+                var response = await _httpClient.PutAsync($"{_httpClient.BaseAddress}/Orders/{id}", content);
                 if (response.IsSuccessStatusCode)
                 {
                     var status = ViewData["status"] as string;
                     if (order.Status == "Đã giao hàng") {
-                        var responseUser = await _httpClient.PutAsync($"https://localhost:7192/api/Users/updateRole/{order.UserId}?totalBuy={order.TotalPrice}", null);
+                        var responseUser = await _httpClient.PutAsync($"{_httpClient.BaseAddress}/Users/updateRole/{order.UserId}?totalBuy={order.TotalPrice}", null);
                         var responseContent = await responseUser.Content.ReadAsStringAsync();
                         _logger.LogInformation("Update User: {Status}, Response: {Response}", response.StatusCode, responseContent);
                         if (responseUser.IsSuccessStatusCode)
@@ -101,7 +102,7 @@ namespace AdminWebGosy.Controllers
         {
             try
             {
-                var response = await _httpClient.GetAsync($"{_httpClient.BaseAddress}/{orderId}");
+                var response = await _httpClient.GetAsync($"{_httpClient.BaseAddress}/Orders/{orderId}");
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -128,7 +129,7 @@ namespace AdminWebGosy.Controllers
         {
             try
             {
-                var response = await _httpClient.GetAsync($"https://localhost:7192/api/OrderDetails/ByOrder/{orderId}");
+                var response = await _httpClient.GetAsync($"{_httpClient.BaseAddress}/OrderDetails/ByOrder/{orderId}");
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -162,7 +163,7 @@ namespace AdminWebGosy.Controllers
         {
             try
             {
-                var response = await _httpClient.GetAsync($"https://localhost:7192/api/Products/{productId}");
+                var response = await _httpClient.GetAsync($"{_httpClient.BaseAddress}/Products/{productId}");
                 if (response.IsSuccessStatusCode)
                 {
                     return await response.Content.ReadFromJsonAsync<Product>();
@@ -185,7 +186,7 @@ namespace AdminWebGosy.Controllers
         {
             try
             {
-                var response = await _httpClient.DeleteAsync($"https://localhost:7192/api/Orders/{id}");
+                var response = await _httpClient.DeleteAsync($"{_httpClient.BaseAddress}/Orders/{id}");
                 if (response.IsSuccessStatusCode)
                 {
                     _logger.LogInformation("Order deleted successfully. Order ID: {OrderId}", id);

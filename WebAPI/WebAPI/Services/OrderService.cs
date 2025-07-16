@@ -40,7 +40,8 @@ namespace WebAPI.Services
             var now = DateTime.Now;
 
             decimal totalDay = await _context.Orders
-                .Where(o => o.CreatedAt.Value.Day == now.Day &&
+                .Where(o =>  o.CreatedAt.HasValue &&
+                             o.CreatedAt.Value.Day == now.Day &&
                              o.CreatedAt.Value.Month == now.Month &&
                              o.CreatedAt.Value.Year == now.Year &&
                              o.Status == "Đã giao hàng"
@@ -48,12 +49,14 @@ namespace WebAPI.Services
                 .SumAsync(o => o.TotalPrice);
 
             decimal totalMonth = await _context.Orders
-                .Where(o => o.CreatedAt.Value.Month == now.Month &&
+                .Where(o => o.CreatedAt.HasValue &&
+                            o.CreatedAt.Value.Month == now.Month &&
                             o.CreatedAt.Value.Year == now.Year &&
                             o.Status == "Đã giao hàng")
                 .SumAsync(o => o.TotalPrice);
 
-            int totalOrder = await _context.Orders
+            int totalOrder = 0;
+            totalOrder = await _context.Orders
             .Where(o => o.CreatedAt.HasValue &&
                         o.CreatedAt.Value.Month == now.Month &&
                         o.CreatedAt.Value.Year == now.Year)
@@ -81,23 +84,27 @@ namespace WebAPI.Services
 
             foreach (var o in orders)
             {
-                var key = (o.CreatedAt.Value.Month, o.CreatedAt.Value.Year );
+                if (!o.CreatedAt.HasValue) continue;
+
+                var key = (o.CreatedAt.Value.Month, o.CreatedAt.Value.Year);
                 if (dict.ContainsKey(key))
                 {
-                    dict[key]+= o.TotalPrice;
+                    dict[key] += o.TotalPrice;
                 }
                 else
                 {
                     dict[key] = o.TotalPrice;
                 }
             }
-            var data = dict.Select(d => new DataChart(d.Key.Month, d.Key.Year, d.Value))
-                   .OrderBy(dc => dc.Year).ThenBy(dc => dc.Month)
-                   .ToList();
 
+            var data = dict.Select(d => new DataChart(d.Key.Month, d.Key.Year, d.Value))
+                           .OrderBy(dc => dc.Year)
+                           .ThenBy(dc => dc.Month)
+                           .ToList();
 
             return data;
         }
+
 
 
     }

@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using AdminWebGosy.Models;
+using Microsoft.Extensions.Options;
 
 namespace AdminWebGosy.Controllers
 {
@@ -12,10 +13,10 @@ namespace AdminWebGosy.Controllers
         private readonly HttpClient _httpClient;
         private readonly ILogger<ProductController> _logger;
 
-        public ProductController(HttpClient httpClient, ILogger<ProductController> logger)
+        public ProductController(HttpClient httpClient, ILogger<ProductController> logger, IOptions<ApiSettings> apiSettings)
         {
             _httpClient = httpClient;
-            _httpClient.BaseAddress = new Uri("https://localhost:7192/api/Products");
+            _httpClient.BaseAddress = new Uri(apiSettings.Value.BaseUrl);
             _logger = logger;
         }
 
@@ -42,7 +43,7 @@ namespace AdminWebGosy.Controllers
                     formData.Add(streamContent, "image", image.FileName);
                 }
 
-                var response = await _httpClient.PostAsync("", formData);
+                var response = await _httpClient.PostAsync(_httpClient.BaseAddress+"/Products", formData);
                 var responseContent = await response.Content.ReadAsStringAsync();
                 _logger.LogInformation("API Response: {StatusCode}, Content: {ResponseContent}", response.StatusCode, responseContent);
 
@@ -96,7 +97,7 @@ namespace AdminWebGosy.Controllers
                     formData.Add(streamContent, "image", image.FileName);
                 }
 
-                var response = await _httpClient.PutAsync($"{_httpClient.BaseAddress}/{id}", formData);
+                var response = await _httpClient.PutAsync($"{_httpClient.BaseAddress}/Products/{id}", formData);
                 var responseContent = await response.Content.ReadAsStringAsync();
                 _logger.LogInformation("API Response: {StatusCode}, Content: {ResponseContent}", response.StatusCode, responseContent);
 
@@ -120,7 +121,7 @@ namespace AdminWebGosy.Controllers
         {
             try
             {
-                var response = await _httpClient.PutAsync($"{_httpClient.BaseAddress}/updateBanner/{id}?isBanner={isBanner}",null);
+                var response = await _httpClient.PutAsync($"{_httpClient.BaseAddress}/Products/updateBanner/{id}?isBanner={isBanner}",null);
                 var responseContent = await response.Content.ReadAsStringAsync();
                 _logger.LogInformation("API Response: {StatusCode}, Content: {ResponseContent}", response.StatusCode, responseContent);
 
@@ -144,7 +145,7 @@ namespace AdminWebGosy.Controllers
         {
             try
             {
-                var response = await _httpClient.DeleteAsync($"{_httpClient.BaseAddress}/{id}");
+                var response = await _httpClient.DeleteAsync($"{_httpClient.BaseAddress}/Products/{id}");
                 var responseContent = await response.Content.ReadAsStringAsync();
                 _logger.LogInformation("API Response: {StatusCode}, Content: {ResponseContent}", response.StatusCode, responseContent);
 
@@ -168,7 +169,7 @@ namespace AdminWebGosy.Controllers
             try
             {
                 await LoadCategoriesAsync();
-                var response = await _httpClient.GetAsync("");
+                var response = await _httpClient.GetAsync($"{_httpClient.BaseAddress}/Products");
                 if (response.IsSuccessStatusCode)
                 {
                     var products = await response.Content.ReadFromJsonAsync<IEnumerable<Product>>();
@@ -189,7 +190,7 @@ namespace AdminWebGosy.Controllers
             await LoadCategoriesAsync();
             try
             {
-                var response = await _httpClient.GetAsync($"{_httpClient.BaseAddress}/{productId}");
+                var response = await _httpClient.GetAsync($"{_httpClient.BaseAddress}/Products/{productId}");
                 if (response.IsSuccessStatusCode)
                 {
                     var product = await response.Content.ReadFromJsonAsync<Product>();
@@ -209,7 +210,7 @@ namespace AdminWebGosy.Controllers
         {
             try
             {
-                var response = await _httpClient.GetAsync($"https://localhost:7192/api/ColorSizes/ProductColorSize/{productId}");
+                var response = await _httpClient.GetAsync($"{_httpClient.BaseAddress}/ColorSizes/ProductColorSize/{productId}");
                 if (response.IsSuccessStatusCode)
                 {
                     var colorSizes = await response.Content.ReadFromJsonAsync<IEnumerable<ColorSize>>();
@@ -229,7 +230,7 @@ namespace AdminWebGosy.Controllers
         {
             try
             {
-                var responseCate = await _httpClient.GetAsync("https://localhost:7192/api/Categories");
+                var responseCate = await _httpClient.GetAsync($"{_httpClient.BaseAddress}/Categories");
                 if (responseCate.IsSuccessStatusCode)
                 {
                     var categories = await responseCate.Content.ReadFromJsonAsync<List<Category>>();

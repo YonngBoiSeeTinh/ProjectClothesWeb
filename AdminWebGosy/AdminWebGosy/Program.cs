@@ -1,10 +1,12 @@
 
+using AdminWebGosy.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddHttpClient();
 builder.Services.AddLogging();
 builder.Services.AddControllersWithViews();
-
+builder.Services.Configure<ApiSettings>(builder.Configuration.GetSection("ApiSettings"));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -23,6 +25,6 @@ app.UseHttpMethodOverride();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Account}/{action=Index}/{id?}");
 
 app.Run();

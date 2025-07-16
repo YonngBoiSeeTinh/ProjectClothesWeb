@@ -1,5 +1,5 @@
-CREATE TABLE Account (
-    id INT PRIMARY KEY,
+CREATE TABLE Accounts (
+    id INT IDENTITY(1,1) PRIMARY KEY,
     created_at DATETIME DEFAULT GETDATE(),
     email NVARCHAR(255) UNIQUE,
     password NVARCHAR(255),
@@ -7,8 +7,8 @@ CREATE TABLE Account (
     user_id INT
 );
 
-CREATE TABLE Cart (
-    id INT PRIMARY KEY,
+CREATE TABLE Carts (
+    id INT IDENTITY(1,1) PRIMARY KEY,
     created_at DATETIME DEFAULT GETDATE(),
     price DECIMAL(18, 2),
     color_size_id INT,
@@ -18,17 +18,18 @@ CREATE TABLE Cart (
     user_id INT
 );
 
-CREATE TABLE Category (
-    id INT PRIMARY KEY,
+CREATE TABLE Categories (
+    id INT IDENTITY(1,1) PRIMARY KEY,
     created_at DATETIME DEFAULT GETDATE(),
     description NVARCHAR(MAX),
-    image NVARCHAR(MAX),
+    image VARBINARY(MAX),
+
     name NVARCHAR(255),
     updated_at DATETIME DEFAULT GETDATE()
 );
 
-CREATE TABLE ColorSize (
-    id INT PRIMARY KEY,
+CREATE TABLE ColorSizes (
+    id INT IDENTITY(1,1) PRIMARY KEY,
     color NVARCHAR(50),
     code NVARCHAR(50),
     price DECIMAL(18, 2),
@@ -39,16 +40,14 @@ CREATE TABLE ColorSize (
     updated_at DATETIME DEFAULT GETDATE()
 );
 
-
-
-CREATE TABLE Order (
-    id INT PRIMARY KEY,
+CREATE TABLE Orders (
+    id INT IDENTITY(1,1) PRIMARY KEY,
     address NVARCHAR(255),
     note NVARCHAR(MAX),
     name NVARCHAR(255),
-    payment_method NVARCHAR(70),
-    payment_status NVARCHAR(70),
-    cancellation_reason NVARCHAR(255),
+    paymentMethod NVARCHAR(70),
+    paymentStatus NVARCHAR(70),
+    cancellationReason NVARCHAR(255),
     created_at DATETIME DEFAULT GETDATE(),
     phone NVARCHAR(15),
     status NVARCHAR(50) DEFAULT 'Chưa xác nhận',
@@ -57,8 +56,8 @@ CREATE TABLE Order (
     user_id INT
 );
 
-CREATE TABLE OrderDetail (
-    id INT PRIMARY KEY,
+CREATE TABLE OrderDetails (
+    id INT IDENTITY(1,1) PRIMARY KEY,
     color_size_id INT,
     created_at DATETIME DEFAULT GETDATE(),
     order_id INT,
@@ -68,25 +67,26 @@ CREATE TABLE OrderDetail (
     updated_at DATETIME DEFAULT GETDATE()
 );
 
-CREATE TABLE Product (
-    id INT PRIMARY KEY,
+CREATE TABLE Products (
+    id INT IDENTITY(1,1) PRIMARY KEY,
     category_id INT,
     created_at DATETIME DEFAULT GETDATE(),
     description NVARCHAR(MAX),
-    image NVARCHAR(MAX),
-    name NVARCHAR(255),
+    image VARBINARY(MAX),
+    name NVARCHAR(50),
     brand NVARCHAR(50),
     price DECIMAL(18, 2),
-    promo NVARCHAR(255),
+    promo int default 0,
     rate INT DEFAULT 0,
-    stars_rate INT,
+    stars_rate INT DEFAULT 0,
     sold INT DEFAULT 0,
+    banner int default 0,
     unit NVARCHAR(50),
     updated_at DATETIME DEFAULT GETDATE()
 );
 
-CREATE TABLE Comment (
-    id INT PRIMARY KEY,
+CREATE TABLE Comments (
+    id INT IDENTITY(1,1) PRIMARY KEY,
     product_id INT,
     user_id INT,
     name NVARCHAR(255),
@@ -96,8 +96,9 @@ CREATE TABLE Comment (
     updated_at DATETIME DEFAULT GETDATE()
 );
 
-CREATE TABLE Promotion (
-    id INT PRIMARY KEY,
+CREATE TABLE Promotions (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    start_at DATETIME DEFAULT GETDATE(),
     created_at DATETIME DEFAULT GETDATE(),
     end_at DATETIME,
     name NVARCHAR(255),
@@ -108,36 +109,54 @@ CREATE TABLE Promotion (
     max_value DECIMAL(18, 2)
 );
 
-CREATE TABLE Role (
-    id INT PRIMARY KEY,
+CREATE TABLE Roles (
+    id INT IDENTITY(1,1) PRIMARY KEY,
     created_at DATETIME DEFAULT GETDATE(),
     name NVARCHAR(255),
-    promo NVARCHAR(MAX),
+    promo int default 0,
     updated_at DATETIME DEFAULT GETDATE()
 );
-
-CREATE TABLE [User] (
-    id INT PRIMARY KEY,
-    account INT,
+CREATE TABLE Users (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    account INT DEFAULT 0,
     address NVARCHAR(255),
     created_at DATETIME DEFAULT GETDATE(),
-    image NVARCHAR(MAX),
+    image VARBINARY(MAX),
+
     name NVARCHAR(255),
     phone NVARCHAR(15),
     role INT,
     total_buy DECIMAL(18, 2) DEFAULT 0,
-    updated_at DATETIME DEFAULT GETDATE(),
-   );
+    updated_at DATETIME DEFAULT GETDATE()
+);
+
+CREATE TABLE Posts (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    [type] NVARCHAR(50),
+    [image] VARBINARY(MAX),
+    [question] NVARCHAR(MAX),
+    [content] NVARCHAR(MAX),
+    [author] NVARCHAR(50),
+    title NVARCHAR(100),
+    created_at DATETIME DEFAULT GETDATE(),
+    updated_at DATETIME DEFAULT GETDATE()
+);
+
+GO
+INSERT INTO Roles (name, promo)
+VALUES 
+  (N'Khách vãng lai', 0),
+  (N'Admin', 0),
+  (N'Nhân viên', 5),
+  (N'Khách hàng thường', 0),
+  (N'Khách hàng Bạc', 7),
+  (N'Khách hàng Vàng', 10),
+  (N'Khách hàng Kim cương', 15);
+GO
+INSERT INTO [Users] (name, phone, address, role, total_buy)
+VALUES (N'Nguyễn Tùng Lâm', '0987654321', N'TP.HCM', 2, 0.00);
+GO
+INSERT INTO Accounts (user_id, email, password)
+VALUES (1, 'lamnt108@gmail.com', '$2a$11$.NmIPrO5ucCf.8oowcH.tJu5Sl/dnFURDwD2nErE/tNDXvafbaJq');
 
 
-DROP TABLE [dbo].[Posts](
-	[id] [int] IDENTITY(1,1) NOT NULL Primary key,
-	[type] [nvarchar](50) NULL,
-	[image] [varbinary](max) NULL,
-	[question] [nvarchar](max) NULL,
-	[content] [nvarchar](max) NULL,
-	[author] [nvarchar](50) NULL,
-	title [nvarchar](100) NULL,
-	[created_at] [datetime] DEFAULT GETDATE(),
-	[updated_at] [datetime] DEFAULT GETDATE(),
-)

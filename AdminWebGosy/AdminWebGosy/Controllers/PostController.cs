@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using AdminWebGosy.Models;
+using Microsoft.Extensions.Options;
 
 namespace AdminWebGosy.Controllers
 {
@@ -12,10 +13,10 @@ namespace AdminWebGosy.Controllers
         private readonly HttpClient _httpClient;
         private readonly ILogger<PostController> _logger;
 
-        public PostController(HttpClient httpClient, ILogger<PostController> logger)
+        public PostController(HttpClient httpClient, ILogger<PostController> logger, IOptions<ApiSettings> apiSettings)
         {
             _httpClient = httpClient;
-            _httpClient.BaseAddress = new Uri("https://localhost:7192/api/Posts");
+            _httpClient.BaseAddress = new Uri(apiSettings.Value.BaseUrl+"/Posts");
             _logger = logger;
         }
 

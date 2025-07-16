@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AdminWebGosy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+210f8ee546fc852597f99f7dd299ed84b00ae3cb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f9e18a67b97cf183f5e9af7b2e48fa819419841")]
 [assembly: System.Reflection.AssemblyProductAttribute("AdminWebGosy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AdminWebGosy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

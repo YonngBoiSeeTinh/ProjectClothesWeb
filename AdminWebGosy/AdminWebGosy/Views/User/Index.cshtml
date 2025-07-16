@@ -11,9 +11,7 @@
     <div class="app-content">
         <div class="d-flex justify-content-between align-items-center mb-3">
             <h1 class="h4">Quản lý danh mục</h1>
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addCategoryModal">
-                <i class="fas fa-plus"></i> Add New Promotion
-            </button>
+           
         </div>
 
         <div class="table-responsive">
@@ -36,7 +34,7 @@
                             <td>@user.TotalBuy?.ToString("C0", new System.Globalization.CultureInfo("vi-VN"))</td>
                             <td>@user.RoleName</td>
                             <td>
-                                <button class="btn btn-sm btn-gray" onclick='openEditPromotionModal(@user.Id);'>
+                                <button class="btn btn-sm btn-gray" onclick='openUserInforModal(@user.Id);'>
                                     <i class="fas fa-edit"></i>
                                 </button>
                                 <form asp-action="DeleteUser" method="post" class="d-inline" onsubmit="return confirmDelete(event)">
@@ -53,57 +51,8 @@
             </table>
 
         </div>
-        <div id="editPromotionModalLayout"></div>
-        <!-- Add user form -->
-        <div class="modal fade" id="addPromotionModal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <form asp-action="AddPromotion" asp-controller="Promotion" method="post" enctype="multipart/form-data">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="addCategoryModalLabel">Thêm danh mục</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-
-                        <div class="modal-body">
-                            <div class="mb-3">
-                                <label for="categoryName" class="form-label">Tên mã giảm giá</label>
-                                <input type="text" class="form-control" name="Name" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="categoryDescription" class="form-label">Mã</label>
-                                <input type="number" class="form-control" name="Code" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="categoryDescription" class="form-label">Giá trị giảm</label>
-                                <input type="number" class="form-control" name="Value" required>
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="categoryDescription" class="form-label">Ngày bắt đầu</label>
-                                <input type="datetime" class="form-control" name="StartAt" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="categoryDescription" class="form-label">Ngày kết thúc</label>
-                                <input type="datetime" class="form-control" name="EndAt" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="categoryDescription" class="form-label">Mức mua tối thiểu</label>
-                                <input type="number" class="form-control" name="MinPrice" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="categoryDescription" class="form-label">Giảm tối đa</label>
-                                <input type="number" class="form-control" name="MaxValue" required>
-                            </div>
-                        </div>
-
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-                            <button type="submit" class="btn btn-primary">Thêm danh mục</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+        <div id="userInforModalLayout"></div>
+       
     </div>
 </main>
 
@@ -126,15 +75,15 @@
         return confirmed;
     }
 
-    function openEditPromotionModal(promoId, event) {
+    function openUserInforModal(userId, event) {
         if (event) event.preventDefault();
 
         $.ajax({
-            url: '/Promotion/OpenEditModal',
-            data: { promoId: promoId },
+            url: '/User/GetInforUser',
+            data: { userId: userId },
             success: function (html) {
-                $('#editPromotionModalLayout').html(html);
-                const modalElement = document.getElementById(`editPromotionModal`);
+                $('#userInforModalLayout').html(html);
+                const modalElement = document.getElementById(`userInfoModal`);
                 if (modalElement) {
                     const existingInstance = bootstrap.Modal.getInstance(modalElement);
                     if (existingInstance) {
@@ -147,7 +96,7 @@
                 }
             },
             error: function () {
-                alert('Không tải được modal chỉnh danh mujc');
+                alert('Không tải được modal user infor');
             }
         });
     }

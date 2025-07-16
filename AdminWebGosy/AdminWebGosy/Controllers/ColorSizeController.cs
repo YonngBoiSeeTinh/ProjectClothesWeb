@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using AdminWebGosy.Models;
+using NuGet.Configuration;
+using Microsoft.Extensions.Options;
 
 namespace AdminWebGosy.Controllers
 {
@@ -9,10 +11,10 @@ namespace AdminWebGosy.Controllers
     { 
         private readonly HttpClient _httpClient;
         private readonly ILogger<ColorSizeController> _logger;
-        public ColorSizeController(HttpClient httpClient, ILogger<ColorSizeController> logger)
+        public ColorSizeController(HttpClient httpClient, ILogger<ColorSizeController> logger, IOptions<ApiSettings> apiSettings)
         {
             _httpClient = httpClient;
-            _httpClient.BaseAddress = new Uri("https://localhost:7192/api/ColorSizes");
+            _httpClient.BaseAddress = new Uri(apiSettings.Value.BaseUrl + "/ColorSizes");
             _logger = logger;
         }
         [HttpGet]
@@ -20,7 +22,7 @@ namespace AdminWebGosy.Controllers
         {
             try
             {
-                var response = await _httpClient.GetAsync($"https://localhost:7192/api/ColorSizes/ProductColorSize/{productId}");
+                var response = await _httpClient.GetAsync($"{_httpClient.BaseAddress}/ProductColorSize/{productId}");
                 if (response.IsSuccessStatusCode)
                 {
                     var colorSizes = await response.Content.ReadFromJsonAsync<IEnumerable<ColorSize>>();
@@ -41,7 +43,7 @@ namespace AdminWebGosy.Controllers
         {
             try
             {
-                var response = await _httpClient.GetAsync($"https://localhost:7192/api/ColorSizes/{colorSizeId}");
+                var response = await _httpClient.GetAsync($"{_httpClient.BaseAddress}/{colorSizeId}");
                 if (response.IsSuccessStatusCode)
                 {
                     var colorSizes = await response.Content.ReadFromJsonAsync<ColorSize>();
@@ -69,7 +71,7 @@ namespace AdminWebGosy.Controllers
                     System.Text.Encoding.UTF8,
                     "application/json"
                 );
-                var response = await _httpClient.PutAsync($"https://localhost:7192/api/ColorSizes/{id}", content);
+                var response = await _httpClient.PutAsync($"{_httpClient.BaseAddress}/{id}", content);
                 var responseContent = await response.Content.ReadAsStringAsync();
                 _logger.LogInformation("Status: {Status}, Response: {Response}", response.StatusCode, responseContent);
 
@@ -112,7 +114,7 @@ namespace AdminWebGosy.Controllers
                 _logger.LogInformation("Request Payload: {Payload}", jsonPayload);
 
                 // Gửi request đến API
-                var response = await _httpClient.PostAsync($"https://localhost:7192/api/ColorSizes", content);
+                var response = await _httpClient.PostAsync($"{_httpClient.BaseAddress}", content);
                 var responseContent = await response.Content.ReadAsStringAsync();
                 _logger.LogInformation("Status: {Status}, Response: {Response}", response.StatusCode, responseContent);
 
@@ -143,7 +145,7 @@ namespace AdminWebGosy.Controllers
         {
             try
             {
-                var response = await _httpClient.DeleteAsync($"https://localhost:7192/api/ColorSizes/{id}");
+                var response = await _httpClient.DeleteAsync($"{_httpClient.BaseAddress}/{id}");
                 var responseContent = await response.Content.ReadAsStringAsync();
                 if (response.IsSuccessStatusCode)
                 {

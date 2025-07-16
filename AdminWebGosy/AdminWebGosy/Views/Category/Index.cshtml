@@ -11,7 +11,7 @@
     <div class="app-content">
         <div class="d-flex justify-content-between align-items-center mb-3">
             <h1 class="h4">Quản lý danh mục</h1>
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addCategoryModal">
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addPromotionModal">
                 <i class="fas fa-plus"></i> Add New Category
             </button>
         </div>
@@ -55,7 +55,7 @@
         </div>
         <div id="editCategoryModalLayout"></div>
         <!-- Add category form -->
-        <div class="modal fade" id="addCategoryModal" tabindex="-1" aria-labelledby="addCategoryModalLabel" aria-hidden="true">
+        <div class="modal fade" id="addPromotionModal" tabindex="-1" aria-labelledby="addCategoryModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <form asp-action="AddCategory" asp-controller="Category" method="post" enctype="multipart/form-data">

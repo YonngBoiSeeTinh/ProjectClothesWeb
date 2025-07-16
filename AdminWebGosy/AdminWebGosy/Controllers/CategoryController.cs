@@ -2,6 +2,7 @@
 using System.Net.Http.Headers;
 using Microsoft.AspNetCore.Mvc;
 using AdminWebGosy.Models;
+using Microsoft.Extensions.Options;
 
 namespace AdminWebGosy.Controllers
 {
@@ -10,10 +11,10 @@ namespace AdminWebGosy.Controllers
         private readonly HttpClient _httpClient;
         private readonly ILogger<CategoryController> _logger;
 
-        public CategoryController(HttpClient httpClient, ILogger<CategoryController> logger)
+        public CategoryController(HttpClient httpClient, ILogger<CategoryController> logger, IOptions<ApiSettings> apiSettings)
         {
             _httpClient = httpClient;
-            _httpClient.BaseAddress = new Uri("https://localhost:7192/api/Categories");
+            _httpClient.BaseAddress = new Uri(apiSettings.Value.BaseUrl+"/Categories");
             _logger = logger;
         }
         public async Task<IActionResult> Index()

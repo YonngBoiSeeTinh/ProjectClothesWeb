@@ -4,6 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using AdminWebGosy.Models;
+using static NuGet.Packaging.PackagingConstants;
+using System.Collections;
+using Microsoft.Extensions.Options;
 
 namespace AdminWebGosy.Controllers
 {
@@ -12,10 +15,10 @@ namespace AdminWebGosy.Controllers
         private readonly HttpClient _httpClient;
         private readonly ILogger<UserController> _logger;
 
-        public UserController(HttpClient httpClient, ILogger<UserController> logger)
+        public UserController(HttpClient httpClient, ILogger<UserController> logger, IOptions<ApiSettings> apiSettings)
         {
             _httpClient = httpClient;
-            _httpClient.BaseAddress = new Uri("https://localhost:7192/api/Users");
+            _httpClient.BaseAddress = new Uri(apiSettings.Value.BaseUrl+"/Users");
             _logger = logger;
         }
 
@@ -26,22 +29,56 @@ namespace AdminWebGosy.Controllers
                 var response = await _httpClient.GetAsync("");
                 if (response.IsSuccessStatusCode)
                 {
-                    var orders = await response.Content.ReadFromJsonAsync<IEnumerable<User>>();
-                    return View(orders);
+                    var users = await response.Content.ReadFromJsonAsync<IEnumerable<User>>();
+                    var lstUser = new  List<User>();
+                    foreach (User u in users)
+                    {
+                        if(u.Role != 2)
+                        {
+                            lstUser.Add(u);
+                        }
+                    }
+                    return View(lstUser);
                 }
                 else
                 {
                     var errorMessage = await response.Content.ReadAsStringAsync();
-                    _logger.LogError($"Failed to fetch orders. Response: {errorMessage}");
+                    _logger.LogError($"Failed to fetch users. Response: {errorMessage}");
                 }
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "An error occurred while fetching orders.");
+                _logger.LogError(ex, "An error occurred while fetching users.");
             }
 
             return View(new List<User>());
         }
+        [HttpGet]
+        public async Task<IActionResult> GetInforUser(int userId)
+        {
+            try
+            {
+                var response = await _httpClient.GetAsync($"{_httpClient.BaseAddress}/{userId}");
+                if (response.IsSuccessStatusCode)
+                {
+                    var user = await response.Content.ReadFromJsonAsync<User>();
+                    return PartialView("_UserInforModal", user);
+                    
+                }
+                else
+                {
+                    var errorMessage = await response.Content.ReadAsStringAsync();
+                    _logger.LogError($"Failed to fetchuser. Response: {errorMessage}");
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while fetching user.");
+            }
+
+            return View();
+        }
+    
         [HttpPost]
         public async Task<IActionResult> AddUser(User user, IFormFile? image)
         {

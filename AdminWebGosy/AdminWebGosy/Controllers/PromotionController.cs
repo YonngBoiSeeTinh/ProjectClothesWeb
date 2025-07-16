@@ -2,6 +2,7 @@
 using System.Net.Http.Headers;
 using Microsoft.AspNetCore.Mvc;
 using AdminWebGosy.Models;
+using Microsoft.Extensions.Options;
 
 namespace AdminWebGosy.Controllers
 {
@@ -10,10 +11,10 @@ namespace AdminWebGosy.Controllers
         private readonly HttpClient _httpClient;
         private readonly ILogger<PromotionController> _logger;
 
-        public PromotionController(HttpClient httpClient, ILogger<PromotionController> logger)
+        public PromotionController(HttpClient httpClient, ILogger<PromotionController> logger, IOptions<ApiSettings> apiSettings)
         {
             _httpClient = httpClient;
-            _httpClient.BaseAddress = new Uri("https://localhost:7192/api/Promotions");
+            _httpClient.BaseAddress = new Uri(apiSettings.Value.BaseUrl +"/Promotions");
             _logger = logger;
         }
         public async Task<IActionResult> Index()
@@ -91,7 +92,7 @@ namespace AdminWebGosy.Controllers
                     System.Text.Encoding.UTF8,
                     "application/json"
                 );
-                var response = await _httpClient.PutAsync($"{_httpClient.BaseAddress}", content);
+                var response = await _httpClient.PostAsync($"{_httpClient.BaseAddress}", content);
                 var responseContent = await response.Content.ReadAsStringAsync();
                 _logger.LogInformation("API Response: {StatusCode}, Content: {ResponseContent}", response.StatusCode, responseContent);
                 if (response.IsSuccessStatusCode)
