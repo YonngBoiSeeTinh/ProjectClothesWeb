@@ -26,14 +26,16 @@ namespace AdminWebGosy.Controllers
         {
             try
             {
+                // goi api
                 var response = await _httpClient.GetAsync("");
                 if (response.IsSuccessStatusCode)
                 {
+                    //kết quả là chuỗi JSon
                     var users = await response.Content.ReadFromJsonAsync<IEnumerable<User>>();
                     var lstUser = new  List<User>();
                     foreach (User u in users)
                     {
-                        if(u.Role != 2)
+                        if(u.Role != 2) // bỏ admin
                         {
                             lstUser.Add(u);
                         }

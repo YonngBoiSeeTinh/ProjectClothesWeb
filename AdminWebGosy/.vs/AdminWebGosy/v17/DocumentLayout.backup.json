@@ -3,12 +3,36 @@
   "WorkspaceRootPath": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0F22166D-52DE-4EDD-8BAE-C2E4DF5988A2}|AdminWebGosy\\AdminWebGosy.csproj|d:\\gosy_ecomer-web\\adminwebgosy\\adminwebgosy\\views\\promotion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0F22166D-52DE-4EDD-8BAE-C2E4DF5988A2}|AdminWebGosy\\AdminWebGosy.csproj|solutionrelative:adminwebgosy\\views\\promotion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0F22166D-52DE-4EDD-8BAE-C2E4DF5988A2}|AdminWebGosy\\AdminWebGosy.csproj|d:\\gosy_ecomer-web\\adminwebgosy\\adminwebgosy\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F22166D-52DE-4EDD-8BAE-C2E4DF5988A2}|AdminWebGosy\\AdminWebGosy.csproj|solutionrelative:adminwebgosy\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F22166D-52DE-4EDD-8BAE-C2E4DF5988A2}|AdminWebGosy\\AdminWebGosy.csproj|d:\\gosy_ecomer-web\\adminwebgosy\\adminwebgosy\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F22166D-52DE-4EDD-8BAE-C2E4DF5988A2}|AdminWebGosy\\AdminWebGosy.csproj|solutionrelative:adminwebgosy\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F22166D-52DE-4EDD-8BAE-C2E4DF5988A2}|AdminWebGosy\\AdminWebGosy.csproj|d:\\gosy_ecomer-web\\adminwebgosy\\adminwebgosy\\views\\category\\_editcategorymodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F22166D-52DE-4EDD-8BAE-C2E4DF5988A2}|AdminWebGosy\\AdminWebGosy.csproj|solutionrelative:adminwebgosy\\views\\category\\_editcategorymodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F22166D-52DE-4EDD-8BAE-C2E4DF5988A2}|AdminWebGosy\\AdminWebGosy.csproj|d:\\gosy_ecomer-web\\adminwebgosy\\adminwebgosy\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F22166D-52DE-4EDD-8BAE-C2E4DF5988A2}|AdminWebGosy\\AdminWebGosy.csproj|solutionrelative:adminwebgosy\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F22166D-52DE-4EDD-8BAE-C2E4DF5988A2}|AdminWebGosy\\AdminWebGosy.csproj|d:\\gosy_ecomer-web\\adminwebgosy\\adminwebgosy\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F22166D-52DE-4EDD-8BAE-C2E4DF5988A2}|AdminWebGosy\\AdminWebGosy.csproj|solutionrelative:adminwebgosy\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F22166D-52DE-4EDD-8BAE-C2E4DF5988A2}|AdminWebGosy\\AdminWebGosy.csproj|d:\\gosy_ecomer-web\\adminwebgosy\\adminwebgosy\\views\\shared\\sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F22166D-52DE-4EDD-8BAE-C2E4DF5988A2}|AdminWebGosy\\AdminWebGosy.csproj|solutionrelative:adminwebgosy\\views\\shared\\sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0F22166D-52DE-4EDD-8BAE-C2E4DF5988A2}|AdminWebGosy\\AdminWebGosy.csproj|d:\\gosy_ecomer-web\\adminwebgosy\\adminwebgosy\\controllers\\promotioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F22166D-52DE-4EDD-8BAE-C2E4DF5988A2}|AdminWebGosy\\AdminWebGosy.csproj|solutionrelative:adminwebgosy\\controllers\\promotioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F22166D-52DE-4EDD-8BAE-C2E4DF5988A2}|AdminWebGosy\\AdminWebGosy.csproj|d:\\gosy_ecomer-web\\adminwebgosy\\adminwebgosy\\views\\promotion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F22166D-52DE-4EDD-8BAE-C2E4DF5988A2}|AdminWebGosy\\AdminWebGosy.csproj|solutionrelative:adminwebgosy\\views\\promotion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,33 +42,104 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_EditCategoryModal.cshtml",
+              "DocumentMoniker": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\Views\\Category\\_EditCategoryModal.cshtml",
+              "RelativeDocumentMoniker": "AdminWebGosy\\Views\\Category\\_EditCategoryModal.cshtml",
+              "ToolTip": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\Views\\Category\\_EditCategoryModal.cshtml",
+              "RelativeToolTip": "AdminWebGosy\\Views\\Category\\_EditCategoryModal.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACAAAABqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-22T16:58:19.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "AdminWebGosy\\Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "AdminWebGosy\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAvwE8AAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T16:53:52.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "AdminWebGosy\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\Controllers\\UserController.cs",
+              "RelativeToolTip": "AdminWebGosy\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T16:36:53.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "AdminWebGosy\\Models\\Product.cs",
+              "ToolTip": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\Models\\Product.cs",
+              "RelativeToolTip": "AdminWebGosy\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T16:36:13.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SideBar.cshtml",
+              "DocumentMoniker": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\Views\\Shared\\SideBar.cshtml",
+              "RelativeDocumentMoniker": "AdminWebGosy\\Views\\Shared\\SideBar.cshtml",
+              "ToolTip": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\Views\\Shared\\SideBar.cshtml",
+              "RelativeToolTip": "AdminWebGosy\\Views\\Shared\\SideBar.cshtml",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAFgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-22T16:29:01.832Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\Views\\Category\\Index.cshtml",
+              "RelativeDocumentMoniker": "AdminWebGosy\\Views\\Category\\Index.cshtml",
+              "ToolTip": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\Views\\Category\\Index.cshtml",
+              "RelativeToolTip": "AdminWebGosy\\Views\\Category\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-16T15:53:56.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\Views\\Promotion\\Index.cshtml",
               "RelativeDocumentMoniker": "AdminWebGosy\\Views\\Promotion\\Index.cshtml",
               "ToolTip": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\Views\\Promotion\\Index.cshtml",
               "RelativeToolTip": "AdminWebGosy\\Views\\Promotion\\Index.cshtml",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAAA0AAABlAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAD8AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-15T18:20:47.771Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-15T18:20:47.771Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "PromotionController.cs",
               "DocumentMoniker": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\Controllers\\PromotionController.cs",
               "RelativeDocumentMoniker": "AdminWebGosy\\Controllers\\PromotionController.cs",
               "ToolTip": "D:\\GOSY_ECOMER-Web\\AdminWebGosy\\AdminWebGosy\\Controllers\\PromotionController.cs",
               "RelativeToolTip": "AdminWebGosy\\Controllers\\PromotionController.cs",
-              "ViewState": "AgIAAH8AAAAALGOSoaEowAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAkwF4AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T18:20:19.636Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-15T18:20:19.636Z"
             }
           ]
         }

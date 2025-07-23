@@ -97,6 +97,7 @@ namespace AdminWebGosy.Controllers
                     formData.Add(streamContent, "image", image.FileName);
                 }
 
+                //gọi api, 
                 var response = await _httpClient.PutAsync($"{_httpClient.BaseAddress}/Products/{id}", formData);
                 var responseContent = await response.Content.ReadAsStringAsync();
                 _logger.LogInformation("API Response: {StatusCode}, Content: {ResponseContent}", response.StatusCode, responseContent);
@@ -111,7 +112,7 @@ namespace AdminWebGosy.Controllers
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Error occurred in UpdateProduct");
-                TempData["ApiLog"] = $"Error: {ex.Message}";
+             
             }
 
             return RedirectToAction("ProductList");
@@ -169,10 +170,14 @@ namespace AdminWebGosy.Controllers
             try
             {
                 await LoadCategoriesAsync();
+                // gọi api
                 var response = await _httpClient.GetAsync($"{_httpClient.BaseAddress}/Products");
+
                 if (response.IsSuccessStatusCode)
                 {
+                    //api trả về chuỗi JSON, 
                     var products = await response.Content.ReadFromJsonAsync<IEnumerable<Product>>();
+                    // chuyển từ JSON sang c# dựa trên class Product
                     return View(products);
                 }
             }

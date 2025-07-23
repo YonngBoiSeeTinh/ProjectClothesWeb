@@ -24,8 +24,8 @@ namespace AdminWebGosy.Controllers
                 var response = await _httpClient.GetAsync("");
                 if (response.IsSuccessStatusCode)
                 {
-                    var products = await response.Content.ReadFromJsonAsync<IEnumerable<Category>>();
-                    return View(products);
+                    var categories = await response.Content.ReadFromJsonAsync<IEnumerable<Category>>();
+                    return View(categories);
                 }
             }
             catch (Exception ex)
@@ -43,6 +43,7 @@ namespace AdminWebGosy.Controllers
                 var response = await _httpClient.GetAsync($"{_httpClient.BaseAddress}/{cateId}");
                 if (response.IsSuccessStatusCode)
                 {
+                    //chuyển từ Json sang c#
                     var category = await response.Content.ReadFromJsonAsync<Category>();
                     return PartialView("_EditCategoryModal", category);
                 }

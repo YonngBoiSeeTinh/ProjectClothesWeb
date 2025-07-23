@@ -87,11 +87,13 @@ namespace AdminWebGosy.Controllers
         {
             try
             {
+                // chuyển qua json
                 var content = new StringContent(
                     System.Text.Json.JsonSerializer.Serialize(promotion),
                     System.Text.Encoding.UTF8,
                     "application/json"
                 );
+                // gọi api thêm khuyến mãi
                 var response = await _httpClient.PostAsync($"{_httpClient.BaseAddress}", content);
                 var responseContent = await response.Content.ReadAsStringAsync();
                 _logger.LogInformation("API Response: {StatusCode}, Content: {ResponseContent}", response.StatusCode, responseContent);

@@ -51,10 +51,10 @@ const Hero = () => {
                             {/* Text content section */}
                             <div className="flex flex-col justify-center gap-4 text-left w-1/2">
                                 <h1
-                                className="text-3xl sm:text-5xl lg:text-7xl font-bold text-indigo-200 mb-4"
+                                className="text-3xl sm:text-5xl lg:text-5xl font-bold text-indigo-200 mb-4"
                                 style={{ textShadow: "-2px 5px 8px rgb(68, 48, 159)" }}
                                 >
-                                {product.promo} % Off
+                                Giá cực sốc
                                 </h1>
                                 <h2
                                 className="text-lg sm:text-2xl lg:text-3xl uppercase text-gray-200 font-bold leading-none mb-4"
